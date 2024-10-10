@@ -58,7 +58,7 @@
             <a href="">¿Olvidaste tu contraseña?</a>
         </div>
         <div class="caja10">
-            <button class="create"><a href="../index.html" style="text-decoration: none; color: black;">INICIAR SESIÓN</a></button>
+            <button class="create"><a href="<?php echo BASE_URL ?>producto"> style="text-decoration: none; color: black;">INICIAR SESIÓN</a></button>
         </div>
         <br>
         <div class="caja11">¿Eres nuevo aquí?</div>
