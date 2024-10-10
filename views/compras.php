@@ -1,7 +1,7 @@
 <div id="contenido">
             <div class="opciones">
                 <div class="foto_perfil">
-                    <img src="../img/perfil.jpg" height="100%" alt="">
+                    <img src="./views/plantilla/img/perfil.jpg" height="100%" alt="">
                 </div>
                 <div class="nombre_usuario">
                     <h6>Hola, Roliber Yucra</h6>
@@ -21,7 +21,7 @@
                     <div class="lista_compras">
                         <div class="producto_comprado">
                             <div class="img_producto_comprado">
-                                <img src="../img/laptop10.jpg" height="100%" alt="">
+                                <img src="./views/plantilla/img/laptop10.jpg" height="100%" alt="">
                             </div>
                             <div class="descripcion_producto_comprado">
                                 <h5>LAPTOP ASUS E1504FA-L1112W 15.6"</h5>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="producto_comprado">
                             <div class="img_producto_comprado">
-                                <img src="../img/impresora14.jpg" height="100%" alt="">
+                                <img src="./views/plantilla/img/impresora14.jpg" height="100%" alt="">
                             </div>
                             <div class="descripcion_producto_comprado">
                                 <h5>IMPRESORA CANON G3170</h5>
@@ -45,7 +45,7 @@
                         </div>
                         <div class="producto_comprado">
                             <div class="img_producto_comprado">
-                                <img src="../img/computadora16.jpg" height="100%" alt="">
+                                <img src="./views/plantilla/img/computadora16.jpg" height="100%" alt="">
                             </div>
                             <div class="descripcion_producto_comprado">
                                 <h5>COMPUTADORA AMD RAIZEN</h5>
