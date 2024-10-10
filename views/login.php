@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo BASE_URL ?>/views/plantilla/css/style.css">
-    <link rel="icon" href="../img/loguito.png" type="image/x-icon">
+    <link rel="icon" href="./views/plantilla/img/loguito.png" type="image/x-icon">
     <title>Login</title>
 </head>
 <body>
