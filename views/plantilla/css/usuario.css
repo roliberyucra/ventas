@@ -28,6 +28,14 @@ body{
     justify-content: space-around;
 }
 
+
+
+/* Estilos Login */
+/* Estilos Login */
+/* Estilos Login */
+
+
+
 .caja1{
     display: flex;
     margin: 20px 20px 5px 20px;
@@ -64,7 +72,7 @@ body{
     background-repeat: no-repeat;
 }
 
-.loguito{
+.caja_loguito{
     width: 80%;
     height: auto;
 }
@@ -101,7 +109,7 @@ body{
     justify-content: space-around;
 }
 
-.icono{
+.caja_icono{
     display: flex;
     width: 50px;
     height: 50px;
@@ -148,7 +156,7 @@ body{
     justify-content: center;
 }
 
-.user{
+.caja_user{
     border: 0;
     border-radius: 10px;
     width: 250px;
@@ -177,7 +185,7 @@ body{
     justify-content: center;
 }
 
-button{
+button.create{
     border: 0;
     border-radius: 40px;
     background-color: white;
@@ -186,6 +194,11 @@ button{
     height: 40px;
 }
 
-button:hover{
+button.create:hover{
     background-color: green;
 }
+
+
+/* Fin estilos Login */
+/* Fin estilos Login */
+/* Fin estilos Login */

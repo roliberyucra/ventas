@@ -6,7 +6,7 @@
         <div class="caja2"></div>
         <br>
         <div class="caja3">
-            <div class="loguito">
+            <div class="caja_loguito">
                 <img src="./views/plantilla/img/logo.png" width="100%" alt="logo">
             </div>
         </div>
@@ -19,13 +19,13 @@
         </div>
         <br>
         <div class="caja6">
-            <div class="icono">
+            <div class="caja_icono">
                 <img src="./views/plantilla/img/facebook.png" width="100%" alt="logo">
             </div>
-            <div class="icono">
+            <div class="caja_icono">
                 <img src="./views/plantilla/img/google.png" width="100%" alt="logo">
             </div>
-            <div class="icono">
+            <div class="caja_icono">
                 <img src="./views/plantilla/img/twitter.png" width="100%" alt="logo">
             </div>
         </div>
@@ -38,10 +38,10 @@
         <div class="caja8">
             <form>
                 <label>
-                    <input class="user" type="text" name="usuario" placeholder="Correo*">
+                    <input class="caja_user" type="text" name="usuario" placeholder="Correo*">
                     <br>
                     <br>
-                    <input class="user" type="text" name="password" placeholder="Contraseña*">
+                    <input class="caja_user" type="text" name="password" placeholder="Contraseña*">
                 </label>
             </form>
         </div>
@@ -54,7 +54,7 @@
         <br>
         <div class="caja11">¿Eres nuevo aquí?</div>
         <div class="caja12">
-            <button>Crear cuenta</button>
+            <button class="create">Crear cuenta</button>
         </div>
         <br>
     </div>
