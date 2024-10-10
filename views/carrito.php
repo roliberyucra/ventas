@@ -5,7 +5,7 @@
                 </div>
                 <div class="lista_productos">
                     <div class="img_producto">
-                        <img src="../img/computadora15.png" height="80%" alt="">
+                        <img src="./views/plantilla/img/computadora15.png" height="80%" alt="">
                     </div>
                     <div class="descripcion_producto">
                         <h5 style="color: black;">COMPUTADORA AMD A10</h5>
@@ -49,12 +49,12 @@
                         </script>
                     </div>
                     <div class="tacho">
-                        <a href="basura.html"><img src="../img/tacho.png" width="30%" alt=""></a>
+                        <a href="basura.html"><img src="./views/plantilla/img/tacho.png" width="30%" alt=""></a>
                     </div>
                 </div>
                 <div class="lista_productos">
                     <div class="img_producto">
-                        <img src="../img/impresora12.png" height="80%" alt="">
+                        <img src="./views/plantilla/img/impresora12.png" height="80%" alt="">
                     </div>
                     <div class="descripcion_producto">
                         <h5 style="color: black;">IMPRESORA MAXIFY G3170</h5>
@@ -103,7 +103,7 @@
                 </div>
                 <div class="lista_productos">
                     <div class="img_producto">
-                        <img src="../img/celular13.png" height="80%" alt="">
+                        <img src="./views/plantilla/img/celular13.png" height="80%" alt="">
                     </div>
                     <div class="descripcion_producto">
                         <h5 style="color: black;">Samsung Galaxy Note 20 Ultra 5G 12GB/256GB Mystic Bronze</h5>
@@ -152,7 +152,7 @@
                 </div>
                 <div class="lista_productos">
                     <div class="img_producto">
-                        <img src="../img/laptop3.png" height="80%" alt="">
+                        <img src="./views/plantilla/img/laptop3.png" height="80%" alt="">
                     </div>
                     <div class="descripcion_producto">
                         <h5 style="color: black;">LAPTOP ASUS E1504FA</h5>
@@ -196,7 +196,7 @@
                         </script>
                     </div>
                     <div class="tacho">
-                        <a href="basura.html"><img src="../img/tacho.png" width="30%" alt=""></a>
+                        <a href="basura.html"><img src="./views/plantilla/img/tacho.png" width="30%" alt=""></a>
                     </div>
                 </div>
             </div>
