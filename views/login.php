@@ -1,4 +1,3 @@
-<body>
     <div id="contenido">
         <div class="caja1">
             <p><b>Iniciar sesión</b></p>
@@ -58,4 +57,3 @@
         </div>
         <br>
     </div>
-</body>
