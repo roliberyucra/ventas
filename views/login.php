@@ -7,7 +7,7 @@
     <link rel="icon" href="./views/plantilla/img/loguito.png" type="image/x-icon">
     <title>Login</title>
 </head>
-<body>
+<body style="background-image: url('./views/plantilla/img/audi.jpg');">
 <div id="contenido_login">
         <div class="caja1">
             <p><b>Iniciar sesión</b></p>
