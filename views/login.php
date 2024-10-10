@@ -8,7 +8,7 @@
     <title>Login</title>
 </head>
 <body>
-<div id="contenido">
+<div id="contenido_login">
         <div class="caja1">
             <p><b>Iniciar sesión</b></p>
         </div>
