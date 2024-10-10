@@ -141,6 +141,7 @@ body{
     height: 700px;
     border-radius: 20px;
     background-color: grey;
+    margin: 50% auto;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
