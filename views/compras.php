@@ -6,11 +6,11 @@
                 <div class="nombre_usuario">
                     <h6>Hola, Roliber Yucra</h6>
                 </div>
-                <button class="opciones_cuenta" onclick="window.location.href = '/perfil.html';"><h5>Mi perfil</h5></button>
-                <button class="opciones_cuenta" onclick="window.location.href = '/compras.html';"><h5>Mis compras</h5></button>
-                <button class="opciones_cuenta" onclick="window.location.href = '/vistos.html';"><h5>Vistos recientemente</h5></button>
-                <button class="opciones_cuenta" onclick="window.location.href = '/favoritos.html';"><h5>Favoritos</h5></button>
-                <button class="opciones_cuenta" onclick="window.location.href = '/contraseña.html';"><h5>Mi contraseña</h5></button>
+                <button class="opciones_cuenta" onclick="window.location.href = './perfil.php';"><h5>Mi perfil</h5></button>
+                <button class="opciones_cuenta" onclick="window.location.href = './compras.php';"><h5>Mis compras</h5></button>
+                <button class="opciones_cuenta" onclick="window.location.href = './vistos.php';"><h5>Vistos recientemente</h5></button>
+                <button class="opciones_cuenta" onclick="window.location.href = './favoritos.php';"><h5>Favoritos</h5></button>
+                <button class="opciones_cuenta" onclick="window.location.href = './contraseña.php';"><h5>Mi contraseña</h5></button>
             </div>
             <div class="separacion_compras"></div>
             <div class="contenido_compras">
