@@ -98,7 +98,7 @@
                         </script>
                     </div>
                     <div class="tacho">
-                        <a href="basura.html"><img src="../img/tacho.png" width="30%" alt=""></a>
+                        <a href="basura.html"><img src="./views/plantilla/img/tacho.png" width="30%" alt=""></a>
                     </div>
                 </div>
                 <div class="lista_productos">
@@ -147,7 +147,7 @@
                         </script>
                     </div>
                     <div class="tacho">
-                        <a href="basura.html"><img src="../img/tacho.png" width="30%" alt=""></a>
+                        <a href="basura.html"><img src="./views/plantilla/img/tacho.png" width="30%" alt=""></a>
                     </div>
                 </div>
                 <div class="lista_productos">

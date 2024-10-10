@@ -8,7 +8,7 @@
                 </div>
                 <div class="informacion_contactos">
                     <div class="img_contactos">
-                        <img src="../img/localizacion.png" alt="" width="50px">
+                        <img src="./views/plantilla/img/localizacion.png" alt="" width="50px">
                     </div>
                     <div class="descipcion_contactos">
                         <b>Localización</b>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="informacion_contactos">
                     <div class="img_contactos">
-                    <img src="../img/watsap.png" alt="" width="50px">
+                    <img src="./views/plantilla/img/watsap.png" alt="" width="50px">
                     </div>
                     <div class="descipcion_contactos">
                         <b>WhatsApp: <a href="https://web.whatsapp.com/" target="_blank"><u>970 273 741</u></a></b>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="informacion_contactos">
                     <div class="img_contactos">
-                    <img src="../img/mensaje.png" alt="" width="50px">
+                    <img src="./views/plantilla/img/mensaje.png" alt="" width="50px">
                     </div>
                     <div class="descipcion_contactos">
                         <b>Correo: <a href="https://simple.ripley.com.pe/minisitios/especial/prueba-preguntas-frecuentes?gad_source=1&gclid=CjwKCAjw1emzBhB8EiwAHwZZxa6IxeM0pHcZiqj0yVfdKssZYdDUcL013efFu3aLFOh4li_hlKv3YBoC55wQAvD_BwE" target="_blank"><u>servicioalcliente@Ecommerce.com.pe</u></a></b>

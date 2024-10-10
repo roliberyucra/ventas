@@ -1,7 +1,7 @@
 <div id="contenido">
             <div class="options">
                 <div class="photo">
-                    <img src="../img/perfil.jpg" height="100%" alt="">
+                    <img src="./views/plantilla/img/perfil.jpg" height="100%" alt="">
                 </div>
                 <div class="hey_username">
                     <h6>Hola, Roliber Yucra</h6>

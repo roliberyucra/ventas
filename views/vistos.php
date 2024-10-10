@@ -1,7 +1,7 @@
 <div id="contenido">
             <div class="options">
                 <div class="photo">
-                    <img src="../img/perfil.jpg" height="100%" alt="">
+                    <img src="./views/plantilla/img/perfil.jpg" height="100%" alt="">
                 </div>
                 <div class="hey_username">
                     <h6>Hola, Roliber Yucra</h6>
@@ -21,7 +21,7 @@
                     <div class="butttons_derecho">
                         <div class="product">
                             <div class="img_product">
-                                <img src="../img/computadora15.png" height="100%" alt="">
+                                <img src="./views/plantilla/img/computadora15.png" height="100%" alt="">
                             </div>
                             <div class="desc_product">
                                 <h5>COMPUTADORA AMD INTEL</h5>
@@ -32,7 +32,7 @@
                         </div>
                         <div class="product">
                             <div class="img_product">
-                                <img src="../img/computadora10.jpg" height="100%" alt="">
+                                <img src="./views/plantilla/img/computadora10.jpg" height="100%" alt="">
                             </div>
                             <div class="desc_product">
                                 <h5>COMPUTADORA AMD 12</h5>
@@ -43,7 +43,7 @@
                         </div>
                         <div class="product">
                             <div class="img_product">
-                                <img src="../img/computadora1.png" height="100%" alt="">
+                                <img src="./views/plantilla/img/computadora1.png" height="100%" alt="">
                             </div>
                             <div class="desc_product">
                                 <h5>COMPUTADORA AMD A10</h5>

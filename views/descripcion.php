@@ -1,17 +1,17 @@
 <div id="contenido">
             <div id="imagen_desc_producto">
                 <div class="imagengrande">
-                    <img src="../img/celular1.png" height="100%" alt="">
+                    <img src="./views/plantilla/img/celular1.png" height="100%" alt="">
                 </div>
                 <div class="imagenpeque">
                     <div class="i_p">
-                        <img src="../img/appleCelular1.png" height="100%" alt="">
+                        <img src="./views/plantilla/img/appleCelular1.png" height="100%" alt="">
                     </div>
                     <div class="i_p">
-                        <img src="../img/appleCelular2.png" height="100%" alt="">
+                        <img src="./views/plantilla/img/appleCelular2.png" height="100%" alt="">
                     </div>
                     <div class="i_p">
-                        <img src="../img/appleCelular3.png" height="100%" alt="">
+                        <img src="./views/plantilla/img/appleCelular3.png" height="100%" alt="">
                     </div>
                 </div>
             </div>
@@ -22,11 +22,11 @@
                         <h2>Samsung Galaxy A14 5g 4gb 128gb Black</h2>
                     </div>
                     <div class="calificacion">
-                        <img src="../img/estrella.png" height="100%" alt="">
-                        <img src="../img/estrella.png" height="100%" alt="">
-                        <img src="../img/estrella.png" height="100%" alt="">
-                        <img src="../img/estrella.png" height="100%" alt="">
-                        <img src="../img/estrella.png" height="100%" alt="">
+                        <img src="./views/plantilla/img/estrella.png" height="100%" alt="">
+                        <img src="./views/plantilla/img/estrella.png" height="100%" alt="">
+                        <img src="./views/plantilla/img/estrella.png" height="100%" alt="">
+                        <img src="./views/plantilla/img/estrella.png" height="100%" alt="">
+                        <img src="./views/plantilla/img/estrella.png" height="100%" alt="">
                     </div>
                     <div class="color_producto">
                         <h2>Color: Negro</h2>
