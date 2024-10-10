@@ -1,0 +1,191 @@
+
+body{
+    margin: 30px 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    opacity: 90%;
+    align-items: center;
+}
+
+#contenido{
+    display: flex;
+    padding: 0;
+    width: 25%;
+    height: 700px;
+    border-radius: 20px;
+    background-color: grey;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.caja1{
+    display: flex;
+    margin: 20px 20px 5px 20px;
+    border: 0;
+    padding: 0;
+    width: 60%;
+    height: 30px;
+    background-color: grey;
+    justify-content: center;
+}
+
+.caja2{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 80%;
+    height: 1px;
+    background-color: black;
+}
+
+.caja3{
+    display: flex;
+    margin: 0 0 0 0;
+    border: 0;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.loguito{
+    width: 80%;
+    height: auto;
+}
+
+.caja4{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 30%;
+    height: 20px;
+    background-color: grey;
+    justify-content: center;
+}
+
+.caja5{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 80%;
+    height: 20px;
+    background-color: transparent;
+}
+
+.caja6{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 80%;
+    height: 20px;
+    background-color: transparent;
+    justify-content: space-around;
+}
+
+.icono{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    background-color: grey;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja7{
+    margin: 30px;
+    display: flex;
+    width: 90%;
+    height: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caja71{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 40%;
+    height: 1px;
+    background-color: black;
+}
+
+.caja72{
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+}
+
+.caja8{
+    display: flex;
+    margin: 0 0 55px 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    background-color: grey;
+    justify-content: center;
+}
+
+.user{
+    border: 0;
+    border-radius: 10px;
+    width: 250px;
+    height: 30px;
+}
+
+.caja9{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 50%;
+    height: 20px;
+    background-color: Grey;
+    justify-content: center;
+}
+
+.caja11{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 50%;
+    height: 20px;
+    background-color: Grey;
+    justify-content: center;
+}
+
+button{
+    border: 0;
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+    width: 130px;
+    height: 40px;
+}
+
+button:hover{
+    background-color: green;
+}

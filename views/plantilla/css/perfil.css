@@ -1,0 +1,375 @@
+body{
+    margin: 50px;
+    border: 0;
+    padding: 0;
+}
+
+.body{
+    width: 100%;
+    height: auto;
+    min-height: 950px;
+    background-color: red;
+    color: white;
+    justify-content: flex-end;
+}
+
+.bloque{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 30%;
+    height: 100px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.bloque1{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 20%;
+    height: 80px;
+    background-color: black;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#buton_menu{
+    font-size: large;
+}
+
+.bloque1_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque1_1{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 20%;
+    height: 80px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.bloque2{
+    display: flex;
+    margin: 10px;
+    border: 0;
+    padding: 0;
+    width: 90%;
+    height: 40px;
+    background-color: black;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#buscador{
+    margin: 0;
+    border: 0;
+    width: 100%;
+    border-radius: 20px;
+    height: 40px;
+}
+
+.bloque3{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 30%;
+    height: 80px;
+    background-color: black;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloque33{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 60%;
+    height: 80px;
+    background-color: black;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.destacados{
+    display: flex;
+    width: 50%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrito{
+    display: flex;
+    width: 50%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 95%;
+    overflow: hidden;
+}
+
+.dropdown-center{
+    position: fixed;
+}
+
+#contenido{
+    padding-top: 120px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    background-color: white;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.options{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 25%;
+    height: auto;
+    min-height: 500px;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.separacion{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 0.1%;
+    height: 480px;
+    background-color: black;
+}
+
+.cont{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 70%;
+    height: auto;
+    min-height: 500px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 40%;
+    height: 120px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img{
+    border-radius: 50%;
+}
+
+.hey_username{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 60%;
+    height: 30px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+button{
+    display: flex;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    background-color: rgb(230, 230, 230);
+    color: black;
+    width: 90%;
+    height: 40px;
+}
+
+button h5{
+    margin: 5px;
+}
+
+button:hover{
+    border: 1px solid green;
+    border-radius: 10px;
+    background-color: green;
+    color: black;
+}
+
+.info{
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 90%;
+    height: 400px;
+    background-color: rgb(230, 230, 230);
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border-radius: 10px;
+}
+
+.title{
+    display: flex;
+    margin: 20px 0 0 0;
+    border: 0;
+    padding: 0;
+    width: 95%;
+    height: 40px;
+    background-color: green;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border-radius: 10px;
+}
+
+.date{
+    display: flex;
+    margin: 10px 0;
+    border: 0;
+    padding: 0;
+    width: 95%;
+    height: 80px;
+    background-color: rgb(230, 230, 230);
+    color: black;
+    border-radius: 10px;
+}
+
+input{
+    margin: 0 10px 0 0;
+    border: 0;
+    padding: 0 0 0 5px;
+    width: 55%;
+    height: 37px;
+    border-radius: 5px;
+}
+
+.butttons_derecho{
+    display: flex;
+    margin: 10px 0;
+    border: 0;
+    padding: 0;
+    width: 95%;
+    height: 80px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.telf{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 30%;
+    height: 40px;
+    background-color: rgb(230, 230, 230);
+}
+
+.fecha{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 68%;
+    height: 40px;
+    background-color: rgb(230, 230, 230);
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.parte1, .parte2, .parte3 {
+    flex: 0 0 30%; /* Para asegurar que los elementos ocupen un ancho máximo de 30% */
+    margin-bottom: 20px;
+}
+
+.parte1 h4, .parte2 h4, .parte3 h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.parte1 p, .parte1 ul, .parte2 ul, .parte3 ul {
+    margin-bottom: 10px;
+}
+
+.parte1 p i, .parte1 ul li a, .parte3 ul li a {
+    margin-right: 5px;
+}
+
+.medios-pago {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.medios-pago li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes-sociales {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.redes-sociales li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes-sociales li a {
+    color: #333;
+    font-size: 24px;
+}
