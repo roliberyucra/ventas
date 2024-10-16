@@ -8,7 +8,7 @@
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Fecha y hora de venta: </label>
-        <input type="datetime" class="form-control" id="exampleFormControlInput1" name="fechaHora">
+        <input type="datetime-local" class="form-control" id="exampleFormControlInput1" name="fechaHora">
     </div>
 
     <div class="mb-3">
