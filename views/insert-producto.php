@@ -18,7 +18,7 @@
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Precio: </label>
-        <input type="int" class="form-control" id="exampleFormControlInput1" min="1" max="90000" step="0.10" placeholder="Precio*" name="precio">
+        <input type="number" class="form-control" id="exampleFormControlInput1" min="1" max="90000" step="0.10" placeholder="Precio*" name="precio">
     </div>
 
     <div class="mb-3">

@@ -8,12 +8,12 @@
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Fecha y hora de ingreso: </label>
-        <input type="datetime" class="form-control" id="exampleFormControlInput1" name="fechaHoraIngreso">
+        <input type="datetime-local" class="form-control" id="exampleFormControlInput1" name="fechaHoraIngreso">
     </div>
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Fecha y hora de salida: </label>
-        <input type="datetime" class="form-control" id="exampleFormControlInput1" name="fechaHoraSalida">
+        <input type="datetime-local" class="form-control" id="exampleFormControlInput1" name="fechaHoraSalida">
     </div>
 
     <div class="mb-3">

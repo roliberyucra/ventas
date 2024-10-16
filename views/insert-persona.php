@@ -13,7 +13,7 @@
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Telefono: </label>
-        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Telefono*" name="telefono">
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Telefono*" name="telefono">
     </div>
 
     <div class="mb-3">
