@@ -1572,4 +1572,10 @@ footer {
 
 #form-insert-control{
     display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    background-color: white;
 }
