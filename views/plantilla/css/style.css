@@ -8,7 +8,7 @@ body{
 .body{
     width: 100%;
     height: auto;
-    min-height: 250px;
+    min-height: 950px;
     background-color: red;
     color: white;
     justify-content: flex-end;
@@ -455,7 +455,7 @@ button.create:hover{
     display: flex;
     width: 100%;
     height: auto;
-    min-height: 250px;
+    min-height: 300px;
     background-color: white;
     justify-content: space-around;
     flex-wrap: wrap;
