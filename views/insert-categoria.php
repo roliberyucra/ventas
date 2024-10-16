@@ -2,7 +2,7 @@
     <form action="./insert-categoria.php" method="post">
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nombre de categoria: </label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nommbre*" name="nombreCat">
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nommbre*" name="nombreCat">
     </div>
     <!--
     <div class="mb-3">
@@ -12,7 +12,7 @@
     -->
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Detalle de la categoria: </label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Detalles*" name="detalleCat">
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Detalles*" name="detalleCat">
     </div>
     <center>
         <button type="submit" class="btn btn-danger">Registrar</button>
