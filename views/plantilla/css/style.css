@@ -1577,7 +1577,7 @@ footer {
     padding-top: 120px;
     width: 100%;
     height: auto;
-    min-height: 620px;
+    min-height: 100px;
     background-color: white;
 }
 
