@@ -1579,3 +1579,8 @@ footer {
     min-height: 600px;
     background-color: white;
 }
+
+
+#form-insert-control form{
+    width: 50%;
+}
