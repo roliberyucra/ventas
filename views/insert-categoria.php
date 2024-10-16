@@ -14,5 +14,6 @@
         <label for="exampleFormControlInput1" class="form-label">Detalles de la categoria: </label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
+    <button type="submit" class="btn btn-danger">Registrar</button>
     </form>
 </div>
