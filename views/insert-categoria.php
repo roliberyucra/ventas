@@ -28,10 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST["nombreCat"];
     $detalle = $_POST["detalleCat"];
 
-    $query = "INSERT INTO curso (nombre, detalle) VALUES ('$nombre', '$detalle')";
+    $query = "INSERT INTO categoria (nombre, detalle) VALUES ('$nombre', '$detalle')";
 
     if (mysqli_query($conexion, $query)) {
-        header("Location: ./view-categoria.php");
+        header("Location: ./insert-categoria.php");
         exit();
     } else {
         echo "Error al registrar la categoria: " . mysqli_error($conexion);
