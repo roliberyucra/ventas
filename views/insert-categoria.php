@@ -1,5 +1,6 @@
 <div id="form-control">
     <form action="">
+        <span>Insertar nueva categoria</span>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nombre de categoria: </label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre*" name="nombreCat">
