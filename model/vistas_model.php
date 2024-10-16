@@ -1,7 +1,7 @@
 <?php
     class vistaModelo{
         protected static function obtener_vista($vista){
-            $nombres_permitidos = ['usuario', 'producto', 'descripcion', 'carrito', 'contactos', 'perfil', 'p-informativas', 'computadoras', 'laptops', 'impresoras', 'celulares', 'camaras', 'compras'];
+            $nombres_permitidos = ['insert-categoria', 'usuario', 'producto', 'descripcion', 'carrito', 'contactos', 'perfil', 'p-informativas', 'computadoras', 'laptops', 'impresoras', 'celulares', 'camaras', 'compras'];
             if (in_array($vista, $nombres_permitidos)) {
                 if (is_file("./views/".$vista.".php")) {
                     $contenido = "./views/".$vista.".php";
