@@ -8,7 +8,7 @@ body{
 .body{
     width: 100%;
     height: auto;
-    min-height: 950px;
+    min-height: 250px;
     background-color: red;
     color: white;
     justify-content: flex-end;
@@ -455,7 +455,7 @@ button.create:hover{
     display: flex;
     width: 100%;
     height: auto;
-    min-height: 300px;
+    min-height: 250px;
     background-color: white;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -1582,7 +1582,7 @@ footer {
 }
 
 
-#form-insert-control form{
+#form-control form{
     width: 50%;
     color: black;
 }
