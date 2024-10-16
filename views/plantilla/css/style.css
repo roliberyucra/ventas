@@ -1577,11 +1577,12 @@ footer {
     padding-top: 120px;
     width: 100%;
     height: auto;
-    min-height: 600px;
+    min-height: 620px;
     background-color: white;
 }
 
 
 #form-insert-control form{
     width: 50%;
+    color: black;
 }
