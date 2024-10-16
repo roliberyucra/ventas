@@ -16,6 +16,7 @@
     </div>
     <center>
         <button type="submit" class="btn btn-danger">Registrar</button>
+        <button type="reset" class="btn btn-danger">Cancelar</button>
     </center>
     </form>
 </div>
