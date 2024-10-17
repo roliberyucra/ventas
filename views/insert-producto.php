@@ -66,3 +66,5 @@
     </center>
     </form>
 </div>
+
+<script src="<?php echo BASE_URL; ?>views/js/function_producto.js"></script>
