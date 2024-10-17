@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/views/plantilla/css/style.css">
     <link rel="icon" href="<?php echo BASE_URL; ?>/views/plantilla/img/loguito.png" type="image/x-icon">
     <script>
-        const base_url = <?php echo BASE_URL; ?>
+        const base_url = '<?php echo BASE_URL; ?>';
     </script>
 </head>
 <body class="p-0 m-0 border-0 bd-example m-0 border-0">
