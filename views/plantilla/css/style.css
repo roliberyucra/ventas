@@ -18,6 +18,7 @@ body{
 /* Estilos para el Menù */
 /* Estilos para el Menù */
 .dropdown-menu{
+    position: fixed;
     z-index: 100;
 }
 
