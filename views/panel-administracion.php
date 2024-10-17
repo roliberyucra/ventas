@@ -3,36 +3,36 @@
         <center><h3><b>BIENVENIDO al Panel de Administración</b></h3></center>
     <center>
         <br>
-        <button type="button" href="<?php echo BASE_URL ?>/view-categoria" class="btn btn-danger">Ver categorias</button>
-        <button type="button" href="<?php echo BASE_URL ?>/insert-categoria" class="btn btn-light">Registrar categoria</button>
+        <a href="<?php echo BASE_URL; ?>/view-categoria" class="btn btn-danger">Ver categorias</a>
+        <a href="<?php echo BASE_URL; ?>/insert-categoria" class="btn btn-light">Registrar categorias</a>
         <br>
         <br>
-        <button type="button" href="<?php echo BASE_URL ?>/view-compra" class="btn btn-danger">Ver compras</button>
-        <button type="button" href="<?php echo BASE_URL ?>/insert-compra" class="btn btn-light">Registrar compra</button>
+        <a href="<?php echo BASE_URL; ?>/view-compra" class="btn btn-danger">Ver compras</a>
+        <a href="<?php echo BASE_URL; ?>/insert-compra" class="btn btn-light">Registrar compra</a>
         <br>
         <br>
-        <button type="button" href="<?php echo BASE_URL ?>/view-detalle-venta" class="btn btn-danger">Ver detalle de ventas</button>
-        <button type="button" href="<?php echo BASE_URL ?>/insert-venta" class="btn btn-light">Registrar detalles de venta</button>
+        <a href="<?php echo BASE_URL; ?>/view-venta" class="btn btn-danger">Ver detalle de ventas</a>
+        <a href="<?php echo BASE_URL; ?>/insert-venta" class="btn btn-light">Registrar venta</a>
         <br>
         <br>
-        <button type="button" href="<?php echo BASE_URL ?>/view-pago" class="btn btn-danger">Ver pagos</button>
-        <button type="button" href="<?php echo BASE_URL ?>/insert-pago" class="btn btn-light">Registrar pago</button>
+        <a href="<?php echo BASE_URL; ?>/view-pago" class="btn btn-danger">Ver pagos</a>
+        <a href="<?php echo BASE_URL; ?>/insert-pago" class="btn btn-light">Registrar pago</a>
         <br>
         <br>
-        <button type="button" href="<?php echo BASE_URL ?>/view-persona" class="btn btn-danger">Ver personas</button>
-        <button type="button" href="<?php echo BASE_URL ?>/insert-persona" class="btn btn-light">Registrar persona</button>
+        <a href="<?php echo BASE_URL; ?>/view-persona" class="btn btn-danger">Ver personas</a>
+        <a href="<?php echo BASE_URL; ?>/insert-persona" class="btn btn-light">Registrar persona</a>
         <br>
         <br>
-        <button type="button" href="<?php echo BASE_URL ?>/view-producto" class="btn btn-danger">Ver productos</button>
-        <button type="button" href="<?php echo BASE_URL ?>/insert-producto" class="btn btn-light">Registrar producto</button>
+        <a href="<?php echo BASE_URL; ?>/view-producto" class="btn btn-danger">Ver productos</a>
+        <a href="<?php echo BASE_URL; ?>/insert-producto" class="btn btn-light">Registrar producto</a>
         <br>
         <br>
-        <button type="button" href="<?php echo BASE_URL ?>/view-sesion" class="btn btn-danger">Ver sesiones</button>
-        <button type="button" href="<?php echo BASE_URL ?>/insert-sesion" class="btn btn-light">Registrar sesión</button>
+        <a href="<?php echo BASE_URL; ?>/view-sesion" class="btn btn-danger">Ver sesiones</a>
+        <a href="<?php echo BASE_URL; ?>/insert-sesion" class="btn btn-light">Registrar sesión</a>
         <br>
         <br>
-        <button type="button" href="<?php echo BASE_URL ?>/view-venta" class="btn btn-danger">Ver ventas</button>
-        <button type="button" href="<?php echo BASE_URL ?>/insert-venta" class="btn btn-light">Registrar venta</button>
+        <a href="<?php echo BASE_URL; ?>/view-venta" class="btn btn-danger">Ver ventas</a>
+        <a href="<?php echo BASE_URL; ?>/insert-venta" class="btn btn-light">Registrar venta</a>
         <br>
     </center>
     </form>

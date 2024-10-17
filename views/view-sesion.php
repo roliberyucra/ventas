@@ -1,5 +1,5 @@
 <div id="form-control">
-        <center><h3><b>Categorias</b></h3></center>
+        <center><h3><b>Compras disponibles</b></h3></center>
         <table class="table">
   <thead>
     <tr>
