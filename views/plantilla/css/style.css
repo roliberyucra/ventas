@@ -17,7 +17,7 @@ body{
 /* Estilos para el Menù */
 /* Estilos para el Menù */
 /* Estilos para el Menù */
-
+/*
 .dropdown-item:hover{
     background-color: grey;
 }
@@ -25,6 +25,8 @@ body{
 .dropdown-center{
     position: fixed;
 }
+
+*/
 
 #menu{
     position: fixed;
@@ -370,9 +372,12 @@ button.create:hover{
     border-radius: 20px;
 }
 
+/*
 .dropdown-center{
     position: fixed;
 }
+
+*/
 
 .bloque2{
     display: flex;
