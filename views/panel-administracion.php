@@ -4,11 +4,11 @@
     <center>
         <br>
         <a  href="<?php echo BASE_URL; ?>/view-categoria" class="btn btn-danger">Ver categorias</a>
-        <a  href="<?php echo BASE_URL; ?>/insert-categoria" class="btn btn-danger">Registrar categorias</a>
+        <a  href="<?php echo BASE_URL; ?>/insert-categoria" class="btn btn-light">Registrar categorias</a>
         <br>
         <br>
         <a  href="<?php echo BASE_URL; ?>/view-compra" class="btn btn-danger">Ver compras</a>
-        <a  href="<?php echo BASE_URL; ?>/insert-compra" class="btn btn-danger">Registrar compra</a>
+        <a  href="<?php echo BASE_URL; ?>/insert-compra" class="btn btn-light">Registrar compra</a>
         <br>
         <br>
         <button type="button" href="<?php echo BASE_URL ?>view-detalle-venta" class="btn btn-danger">Ver detalle de ventas</button>
