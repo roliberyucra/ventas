@@ -17,6 +17,9 @@ body{
 /* Estilos para el Menù */
 /* Estilos para el Menù */
 /* Estilos para el Menù */
+.dropdown-menu{
+    z-index: 100;
+}
 
 .dropdown-item:hover{
     background-color: grey;
