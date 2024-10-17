@@ -23,20 +23,20 @@
                 <div class="bloque1">
                     <a href="../index.html"><img src="./views/plantilla/img/letralogo.png" alt="localizacion" width="140px"></a>
                 </div>
-                <div class="bloque1">
-                    <div class="dropdown-center" style="background-color: black;">
-                        <button id="buton_menu" class="btn btn-secondary dropdown-toggle" style="background-color: black; border-color: black;" type="button" data-bs-toggle="dropdown" aria-expanded="false"><font style="vertical-align: inherit; background-color: black;"><font style="vertical-align: inherit; background-color: black;">
-                            Menu
-                        </font></font></button>
-                        <ul class="dropdown-menu" style="background-color: black; border-color: grey;">
-                            <li><a class="dropdown-item" href="computadoras.html"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Computadoras</font></font></a></li>
-                            <li><a class="dropdown-item" href="impresoras.html"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Impresoras</font></font></a></li>
-                            <li><a class="dropdown-item" href="celulares.html"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Celulares</font></font></a></li>
-                            <li><a class="dropdown-item" href="laptops.html"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Laptops</font></font></a></li>
-                            <li><a class="dropdown-item" href="camaras.html"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Camaras de seguridad</font></font></a></li>
-                        </ul>
-                      </div>
-                </div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
             </div>
             <div class="bloque_menu">
                 <form class="d-flex" role="search">
