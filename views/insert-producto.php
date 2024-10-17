@@ -33,22 +33,22 @@
 
     <div class="mb-3">
         <label for="img1" class="form-label">Imagen de producto 1: </label>
-        <input type="text" class="form-control" id="img1" name="imagen_1">
+        <input type="file" class="form-control" id="img1" name="imagen_1">
     </div>
 
     <div class="mb-3">
         <label for="img2" class="form-label">Imagen de producto 2: </label>
-        <input type="text" class="form-control" id="img2" name="imagen_2">
+        <input type="file" class="form-control" id="img2" name="imagen_2">
     </div>
 
     <div class="mb-3">
         <label for="img3" class="form-label">Imagen de producto 3: </label>
-        <input type="text" class="form-control" id="img3" name="imagen_3">
+        <input type="file" class="form-control" id="img3" name="imagen_3">
     </div>
 
     <div class="mb-3">
         <label for="img4" class="form-label">Imagen de producto 4: </label>
-        <input type="text" class="form-control" id="img4" name="imagen_4">
+        <input type="file" class="form-control" id="img4" name="imagen_4">
     </div>
 
     <div class="mb-3">
