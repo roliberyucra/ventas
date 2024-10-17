@@ -25,10 +25,12 @@ async function insertar_producto() {
         // await = promesa
         let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=Registrar' ,{
             method: 'POST',
-            mode: 'corse',
+            mode: 'cors',
             cache: 'no-cache',
-            body: 'datos'
+            body: datos
         });
+
+        console.log(respuesta);
     } catch (e) {
         console.log("Ups, ocurrió un error" + e);
     }
