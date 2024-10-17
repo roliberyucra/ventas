@@ -3,8 +3,8 @@
         <center><h3><b>BIENVENIDO al Panel de Administración</b></h3></center>
     <center>
         <br>
-        <button type="button" href="<?php echo BASE_URL ?>views/view-categoria" class="btn btn-danger">Ver categorias</button>
-        <button type="button" href="<?php echo BASE_URL ?>views/insert-categoria" class="btn btn-light">Registrar categoria</button>
+        <button type="button" href="<?php echo BASE_URL; ?>view-categoria.php" class="btn btn-danger">Ver categorias</button>
+        <button type="button" href="<?php echo BASE_URL; ?>insert-categoria.php" class="btn btn-light">Registrar categoria</button>
         <br>
         <br>
         <button type="button" href="<?php echo BASE_URL ?>view-compra" class="btn btn-danger">Ver compras</button>
