@@ -41,7 +41,6 @@ body{
     align-items: center;
     opacity: 95%;
     overflow: hidden;
-    z-index: 6;
 }
 
 .bloque_menu{
