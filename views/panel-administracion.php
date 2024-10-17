@@ -3,7 +3,7 @@
         <center><h3><b>BIENVENIDO al Panel de Administración</b></h3></center>
     <center>
         <br>
-        <button type="button" class="btn btn-danger"><a href="<?php echo BASE_URL ?>view-categoria">Ver categorias</a></button>
+        <button type="button" class="btn btn-danger"><a href="<?php echo BASE_URL ?>views/view-categoria">Ver categorias</a></button>
         <button type="button" href="<?php echo BASE_URL; ?>insert-categoria" class="btn btn-light">Registrar categoria</button>
         <br>
         <br>
