@@ -61,6 +61,7 @@
         <input type="number" class="form-control" id="idPro" placeholder="ID proveedor*" name="idProveedor">
     </div>
     <center>
+        <button type="button" onclick="insertar_producto()" class="btn btn-danger">Insertar</button>
         <button type="submit" class="btn btn-danger">Registrar</button>
         <button type="reset" class="btn btn-dark">Cancelar</button>
     </center>
