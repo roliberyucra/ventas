@@ -2,7 +2,7 @@
 
     $tipo = $_REQUEST['tipo'];
 
-    if ($tipo == 'Registrar') {
+    if ($tipo == 'registrar') {
         print_r($_POST);
     }
 
