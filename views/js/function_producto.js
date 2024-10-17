@@ -11,6 +11,9 @@ async function insertar_producto() {
     let imagen4 = document.querySelector('#imagen4').value;
     let idCategoria = document.querySelector('#idCategoria').value;
     let idProveedor = document.querySelector('#idProveedor').value;
-    console.log(codigo);
-    console.log(nombre);
+    
+    if (codigo == "" || nombre == "" || detalle == "" || precio == "" || stock == "" || imagen1 == "" || imagen2 == "" || imagen3 == "" || imagen4 == "" || idCategoria == "" || idProveedor == "") {
+        alert("Error, campos vacíos");
+        return;
+    }
 }
