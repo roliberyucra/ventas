@@ -1,5 +1,5 @@
 <div id="form-control">
-    <form action="">
+    <form action="" id="formInsertProducto">
         <center><h3><b>Formulario de registro de productos</b></h3></center>
     <div class="mb-3">
         <label for="codigo" class="form-label">Código: </label>

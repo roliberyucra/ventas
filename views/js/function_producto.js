@@ -16,4 +16,20 @@ async function insertar_producto() {
         alert("Error, campos vacíos");
         return;
     }
+
+// Mostrar error en caso de codigo roto
+    try {
+        // Capturar los datos del formulario y guardarlos en la constante "datos"
+        const datos = new FormData(formInsertProducto);
+        // Enviar datos hacia el controlador
+        // await = promesa
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=Registrar' ,{
+            method: 'POST',
+            mode: 'corse',
+            cache: 'no-cache',
+            body: 'datos'
+        });
+    } catch (e) {
+        console.log("Ups, ocurrió un error" + e);
+    }
 }
