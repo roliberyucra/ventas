@@ -1,1 +1,4 @@
-console.log("Holo?");
+async function insertar_producto() {
+    let saludo = "Hola";
+    console.log(saludo);
+}
