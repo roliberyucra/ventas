@@ -18,7 +18,8 @@ body{
 /* Estilos para el Menù */
 /* Estilos para el Menù */
 
-.dropdown-menu .dropdown-item{
+.dropdown-item{
+    position: static;
     z-index: 100;
 }
 
