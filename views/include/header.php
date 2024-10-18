@@ -25,8 +25,8 @@
                 <div class="bloque1">
                     <a href="../index.html"><img src="./views/plantilla/img/letralogo.png" alt="localizacion" width="140px"></a>
                 </div>
-
-                <div class="bloque_menu">
+            </div>
+            <div class="bloque_menu">
                 <div class="bloque_sesion">
                     <div class="dropdown-center" style="background-color: black;">
                         <button id="buton_menu" class="btn btn-secondary dropdown-toggle" style="background-color: black; border-color: black;" type="button" data-bs-toggle="dropdown" aria-expanded="false"><font style="vertical-align: inherit; background-color: black;"><font style="vertical-align: inherit; background-color: black;">
@@ -38,16 +38,6 @@
                         </ul>
                     </div>
                 </div>
-                <div class="bloque_informacion">
-                    <div class="bloque_info_contactos">
-                        <a href="contactos.html"><img src="./views/plantilla/img/contactos.png" alt="localizacion" width="60px"></a>
-                    </div>
-                    <div class="bloque_info_carrito">
-                        <a href="carrito.html"><img src="./views/plantilla/img/carrito.png" alt="localizacion" width="40px"></a>
-                    </div>
-                </div>
-            </div>
-
             </div>
             <div class="bloque_menu">
                 <form class="d-flex" role="search">
