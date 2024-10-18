@@ -17,20 +17,9 @@ body{
 /* Estilos para el Menù */
 /* Estilos para el Menù */
 /* Estilos para el Menù */
-.collapse{
+
+.dropdown-item{
     z-index: 100;
-}
-
-.dropdown-menu{
-    z-index: 100;
-}
-
-.dropdown-item:hover{
-    background-color: grey;
-}
-
-.dropdown-center{
-    position: fixed;
 }
 
 #menu{
