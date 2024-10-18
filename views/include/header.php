@@ -20,10 +20,10 @@
         <div id="menu">
             <div class="bloque_menu">
                 <div class="bloque1">
-                    <a href="../index.html"><img src="./views/plantilla/img/loguito.png" alt="localizacion" width="60px"></a>
+                    <a href="<?php echo BASE_URL; ?>/producto"><img src="./views/plantilla/img/loguito.png" alt="localizacion" width="60px"></a>
                 </div>
                 <div class="bloque1">
-                    <a href="../index.html"><img src="./views/plantilla/img/letralogo.png" alt="localizacion" width="140px"></a>
+                    <a href="<?php echo BASE_URL; ?>/producto"><img src="./views/plantilla/img/letralogo.png" alt="localizacion" width="140px"></a>
                 </div>
             </div>
             <div class="bloque_menu">
