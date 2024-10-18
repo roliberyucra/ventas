@@ -19,7 +19,7 @@ body{
 /* Estilos para el Menù */
 
 .dropdown-menu .dropdown-item{
-    position: static;
+    position: fixed;
     z-index: 100;
 }
 
