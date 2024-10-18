@@ -17,7 +17,7 @@ body{
 /* Estilos para el Menù */
 /* Estilos para el Menù */
 /* Estilos para el Menù */
-a.nav-link{
+.collapse{
     z-index: 100;
 }
 
