@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="<?php echo BASE_URL ?>/views/plantilla/css/style.css">
-    <link rel="icon" href="../img/loguito.png" type="image/x-icon">
+    <link rel="icon" href="<?php echo BASE_URL ?>/views/plantilla/img/loguito.png" type="image/x-icon">
 </head>
 <body class="p-0 m-0 border-0 bd-example m-0 border-0">
 
@@ -30,7 +30,7 @@
                 <div class="bloque_sesion">
                     <div class="dropdown-center" style="background-color: black;">
                         <button id="buton_menu" class="btn btn-secondary dropdown-toggle" style="background-color: black; border-color: black;" type="button" data-bs-toggle="dropdown" aria-expanded="false"><font style="vertical-align: inherit; background-color: black;"><font style="vertical-align: inherit; background-color: black;">
-                            Hola, Roliber
+                            Categorias
                         </font></font></button>
                         <ul class="dropdown-menu" style="background-color: black; border-color: grey;">
                           <li><a class="dropdown-item" href="perfil.html"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Mi cuenta</font></font></a></li>
