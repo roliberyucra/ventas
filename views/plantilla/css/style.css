@@ -17,12 +17,9 @@ body{
 /* Estilos para el Menù */
 /* Estilos para el Menù */
 /* Estilos para el Menù */
-
-.dropdown-item{
+ul.dropdown-menu li a.dropdown-item{
     z-index: 100;
 }
-
-
 
 #menu{
     position: fixed;
