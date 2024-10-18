@@ -19,7 +19,6 @@ body{
 /* Estilos para el Menù */
 
 .dropdown-item{
-    position: relative;
     z-index: 100;
 }
 
