@@ -17,7 +17,7 @@ body{
 /* Estilos para el Menù */
 /* Estilos para el Menù */
 /* Estilos para el Menù */
-nav.navbar{
+a.nav-link{
     z-index: 100;
 }
 
