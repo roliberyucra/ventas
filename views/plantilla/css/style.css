@@ -17,6 +17,10 @@ body{
 /* Estilos para el Menù */
 /* Estilos para el Menù */
 /* Estilos para el Menù */
+nav.navbar{
+    z-index: 100;
+}
+
 .dropdown-menu{
     z-index: 100;
 }
