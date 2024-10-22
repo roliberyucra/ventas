@@ -7,6 +7,7 @@
 
     if ($tipo == 'Registrar') {
         print_r($_POST);
+        /*
         if ($_POST) {
             $codigo = $_POST['codigo'];
             $nombre = $_POST['nombre'];
@@ -27,7 +28,7 @@
                 $arrProducto = $objProducto->registrarProducto($codigo, $nombre, $detalle, $precio, $stock, $fechaVencimiento, $imagen1, $imagen2, $imagen3, $imagen4, $idCategoria, $idProveedor);
             }
 
-        }
+        } */
     }
 
 ?>
