@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/views/plantilla/css/style.css">
     <link rel="icon" href="<?php echo BASE_URL; ?>/views/plantilla/img/loguito.png" type="image/x-icon">
+    <script src="<?php echo BASE_URL; ?>/views/js/function_producto.js"></script>
     <script>
         const base_url = '<? echo BASE_URL; ?>';
     </script>
