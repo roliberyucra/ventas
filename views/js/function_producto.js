@@ -23,7 +23,7 @@ async function insertar_producto() {
         const datos = new FormData(formInsertProducto);
         // Enviar datos hacia el controlador
         // await = promesa
-        let respuesta = await fetch(base_url + '/controller/Producto.php?tipo=registrar',{
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=registrar',{
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
