@@ -1,5 +1,5 @@
 <?php
-    require_once('./model/productoModel.php');
+    
     $tipo = $_REQUEST['tipo'];
 
     if ($tipo == 'Registrar') {
