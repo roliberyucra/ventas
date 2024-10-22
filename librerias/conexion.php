@@ -9,7 +9,7 @@
            if (mysqli_connect_errno()) {
                 echo "Error de conexión: ".mysqli_connect_errno();
            }
-           return $mysq;
+           return $mysql;
         }
 
     }
