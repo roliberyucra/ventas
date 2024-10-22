@@ -11,8 +11,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="<?php echo BASE_URL ?>/views/plantilla/css/style.css">
-    <link rel="icon" href="<?php echo BASE_URL ?>/views/plantilla/img/loguito.png" type="image/x-icon">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/views/plantilla/css/style.css">
+    <link rel="icon" href="<?php echo BASE_URL; ?>/views/plantilla/img/loguito.png" type="image/x-icon">
     <script>
         base_url = "<? echo BASE_URL; ?>";
     </script>
