@@ -13,17 +13,18 @@
             $detalle = $_POST['detalle'];
             $precio = $_POST['precio'];
             $stock = $_POST['stock'];
+            $fechaVencimiento = $_POST['fechaVencimiento'];
             $imagen1 = $_POST['imagen1'];
             $imagen2 = $_POST['imagen2'];
             $imagen3 = $_POST['imagen3'];
             $imagen4 = $_POST['imagen4'];
             $idCategoria = $_POST['idCategoria'];
             $idProveedor = $_POST['idProveedor'];
-            if ($codigo == "" || $nombre == "" || $detalle == "" || $precio == "" || $stock == "" || $imagen1 == "" || $imagen2 == "" || $imagen3 == "" || $imagen4 == "" || $idCategoria == "" || $idProveedor == "") {
+            if ($codigo == "" || $nombre == "" || $detalle == "" || $precio == "" || $stock == "" || $fechaVencimiento == "" || $imagen1 == "" || $imagen2 == "" || $imagen3 == "" || $imagen4 == "" || $idCategoria == "" || $idProveedor == "") {
                 $arr_respuesta = array('status'=>false,'mensaje'=>'Error, campos vacíos');
             }else{
                 // Aqui se guardará la respuesta del modelo
-                $arrProducto = $objProducto->registrarProducto($codigo, $nombre, $detalle, $precio, $stock, $imagen1, $imagen2, $imagen3, $imagen4, $idCategoria, $idProveedor);
+                $arrProducto = $objProducto->registrarProducto($codigo, $nombre, $detalle, $precio, $stock, $fechaVencimiento, $imagen1, $imagen2, $imagen3, $imagen4, $idCategoria, $idProveedor);
             }
 
         }
