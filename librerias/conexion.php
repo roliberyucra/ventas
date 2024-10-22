@@ -1,7 +1,7 @@
 <?php
     require_once "./config/config.php";
 
-    class conexion{
+    class Conexion{
         public static function connect(){
            // $mysql = new mysqli(BD_HOST, BD_NAME, BD_USER, BD_PASSWORD);
            $mysql = new mysqli(BD_HOST, BD_USER, BD_PASSWORD, BD_NAME);
