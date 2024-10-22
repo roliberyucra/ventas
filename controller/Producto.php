@@ -2,6 +2,9 @@
     require_once('./model/productoModel.php');
     $tipo = $_REQUEST['tipo'];
 
+    // Intanciar la clase modeloproducto
+    $objProducto = new ProductoModel();
+
     if ($tipo == 'Registrar') {
         print_r($_POST);
         if ($_POST) {
@@ -19,7 +22,8 @@
             if ($codigo == "" || $nombre == "" || $detalle == "" || $precio == "" || $stock == "" || $imagen1 == "" || $imagen2 == "" || $imagen3 == "" || $imagen4 == "" || $idCategoria == "" || $idProveedor == "") {
                 $arr_respuesta = array('status'=>false,'mensaje'=>'Error, campos vacíos');
             }else{
-                # code ...
+                // Aqui se guardará la respuesta del modelo
+                $arrProducto = $objProducto->registrarProducto($codigo, $nombre, $detalle, $precio, $stock, $imagen1, $imagen2, $imagen3, $imagen4, $idCategoria, $idProveedor);
             }
 
         }
