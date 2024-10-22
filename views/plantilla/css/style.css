@@ -17,13 +17,8 @@ body{
 /* Estilos para el Menù */
 /* Estilos para el Menù */
 /* Estilos para el Menù */
-
-.dropdown-item:hover{
-    background-color: grey;
-}
-
-.dropdown-center{
-    position: fixed;
+ul.dropdown-menu li{
+    z-index: 100;
 }
 
 #menu{
