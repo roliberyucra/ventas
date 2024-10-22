@@ -5,7 +5,7 @@
     // Intanciar la clase modeloproducto
     $objProducto = new ProductoModel();
 
-    if ($tipo == 'Registrar') {
+    if ($tipo == 'registrar') {
         print_r($_POST);
         /*
         if ($_POST) {
