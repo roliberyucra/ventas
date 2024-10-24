@@ -68,3 +68,5 @@
     </center>
     </form>
 </div>
+
+<script>listar_categorias();</script>

@@ -41,11 +41,12 @@ async function insertar_producto() {
         console.log("Ups, ocurrió un error" + e);
     }
 }
-/*
+
 async function listar_categorias() {
     try{
         let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=listar');
+        console.log(respuesta);
     }catch(e){
         console.log("Error al cargar categorias." + e);
     }
-}*/
+}
