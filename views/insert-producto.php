@@ -25,35 +25,35 @@
         <label for="stock" class="form-label">Stock: </label>
         <input type="number" class="form-control" id="stock" min="1" max="999999" placeholder="Stock*" name="stock">
     </div>
+    
+    <div class="mb-3">
+        <label for="idCategoria" class="form-label">ID categoria: </label>
+        <input type="number" class="form-control" id="idCategoria" placeholder="ID categoria*" name="idCategoria">
+    </div>
 
     <div class="mb-3">
         <label for="fechaVencimiento" class="form-label">Fecha vencimiento: </label>
-        <input type="date" class="form-control" id="fechaVencimiento" placeholder="Fecha de vencimiento*" name="fechaVencimiento" not required>
+        <input type="date" class="form-control" id="fechaVencimiento" placeholder="Fecha de vencimiento*" name="fechaVencimiento">
     </div>
 
     <div class="mb-3">
         <label for="img1" class="form-label">Imagen de producto 1: </label>
-        <input type="text" class="form-control" id="imagen1" name="imagen_1">
+        <input type="text" class="form-control" id="imagen1" name="imagen1">
     </div>
 
     <div class="mb-3">
         <label for="img2" class="form-label">Imagen de producto 2: </label>
-        <input type="text" class="form-control" id="imagen2" name="imagen_2">
+        <input type="text" class="form-control" id="imagen2" name="imagen2">
     </div>
 
     <div class="mb-3">
         <label for="img3" class="form-label">Imagen de producto 3: </label>
-        <input type="text" class="form-control" id="imagen3" name="imagen_3">
+        <input type="text" class="form-control" id="imagen3" name="imagen3">
     </div>
 
     <div class="mb-3">
         <label for="img4" class="form-label">Imagen de producto 4: </label>
-        <input type="text" class="form-control" id="imagen4" name="imagen_4">
-    </div>
-
-    <div class="mb-3">
-        <label for="idCategoria" class="form-label">ID categoria: </label>
-        <input type="number" class="form-control" id="idCategoria" placeholder="ID categoria*" name="idCategoria">
+        <input type="text" class="form-control" id="imagen4" name="imagen4">
     </div>
 
     <div class="mb-3">

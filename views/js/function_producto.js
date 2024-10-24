@@ -4,15 +4,15 @@ async function insertar_producto() {
     let detalle = document.querySelector('#detalle').value;
     let precio = document.querySelector('#precio').value;
     let stock = document.querySelector('#stock').value;
+    let idCategoria = document.querySelector('#idCategoria').value;
     let fechaVencimiento = document.querySelector('#fechaVencimiento').value;
     let imagen1 = document.querySelector('#imagen1').value;
     let imagen2 = document.querySelector('#imagen2').value;
     let imagen3 = document.querySelector('#imagen3').value;
     let imagen4 = document.querySelector('#imagen4').value;
-    let idCategoria = document.querySelector('#idCategoria').value;
     let idProveedor = document.querySelector('#idProveedor').value;
     
-    if (codigo == "" || nombre == "" || detalle == "" || precio == "" || stock == "" || fechaVencimiento == "" || imagen1 == "" || imagen2 == "" || imagen3 == "" || imagen4 == "" || idCategoria == "" || idProveedor == "") {
+    if (codigo == "" || nombre == "" || detalle == "" || precio == "" || stock == "" || fechaVencimiento == "" || idCategoria == "" || imagen1 == "" || imagen2 == "" || imagen3 == "" || imagen4 == "" || idProveedor == "") {
         alert("Error, campos vacíos");
         return;
     }
@@ -29,8 +29,14 @@ async function insertar_producto() {
             cache: 'no-cache',
             body: datos
         });
+        json = await respuesta.json();
+        if (json.status) {
+            swal("Registro", json.mensaje, "success");
+        }else{
+            swal("Registro", json.mensaje, "error");
+        }
 
-        console.log(respuesta);
+        console.log(json);
     } catch (e) {
         console.log("Ups, ocurrió un error" + e);
     }

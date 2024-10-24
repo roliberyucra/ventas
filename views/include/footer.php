@@ -46,9 +46,11 @@
         </div>
         -->
     </div>
-</body>
+
     <!-- Script Mensaje de alter (Anibal) -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Fin Script Mensaje de alter (Anibal) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+    
 </html>
