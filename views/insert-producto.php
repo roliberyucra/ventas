@@ -28,7 +28,12 @@
     
     <div class="mb-3">
         <label for="idCategoria" class="form-label">ID categoria: </label>
-        <input type="number" class="form-control" id="idCategoria" placeholder="ID categoria*" name="idCategoria">
+        <select class="form-control" name="idCategoria" id="idCategoria" required>
+        <option>Seleccione</option>
+        <!-- <option value="1">1</option> -->
+        <!-- <option value="2">2</option> -->
+        </select>
+        <!-- <input type="number" class="form-control" id="" placeholder="ID categoria*" name=""> -->
     </div>
 
     <div class="mb-3">
