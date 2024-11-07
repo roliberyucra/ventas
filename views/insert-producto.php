@@ -27,9 +27,9 @@
     </div>
     
     <div class="mb-3">
-        <label for="idCategoria" class="form-label">ID categoria: </label>
+        <label for="idCategoria" class="form-label">Categoria: </label>
         <select class="form-control" name="idCategoria" id="idCategoria" required>
-        <option>Seleccione</option>
+        <option disabled>Seleccione</option>
         <!-- <option value="1">1</option> -->
         <!-- <option value="2">2</option> -->
         </select>
@@ -43,35 +43,38 @@
 
     <div class="mb-3">
         <label for="img1" class="form-label">Imagen de producto 1: </label>
-        <input type="text" class="form-control" id="imagen1" name="imagen1">
+        <input type="file" class="form-control" id="imagen1" name="imagen1">
     </div>
 
     <div class="mb-3">
         <label for="img2" class="form-label">Imagen de producto 2: </label>
-        <input type="text" class="form-control" id="imagen2" name="imagen2">
+        <input type="file" class="form-control" id="imagen2" name="imagen2">
     </div>
 
     <div class="mb-3">
         <label for="img3" class="form-label">Imagen de producto 3: </label>
-        <input type="text" class="form-control" id="imagen3" name="imagen3">
+        <input type="file" class="form-control" id="imagen3" name="imagen3">
     </div>
 
     <div class="mb-3">
         <label for="img4" class="form-label">Imagen de producto 4: </label>
-        <input type="text" class="form-control" id="imagen4" name="imagen4">
+        <input type="file" class="form-control" id="imagen4" name="imagen4">
     </div>
 
     <div class="mb-3">
-        <label for="idProveedor" class="form-label">ID proveedor: </label>
-        <input type="number" class="form-control" id="idProveedor" placeholder="ID proveedor*" name="idProveedor">
+        <label for="idProveedor" class="form-label">Proveedor: </label>
+        <select class="form-control" name="idProveedor" id="idProveedor" required>
+        <option disabled>Seleccione</option>
+        </select>
     </div>
     <center>
         <button type="button" onclick="insertar_producto()" class="btn btn-danger">Insertar</button>
 
-        <button type="submit" class="btn btn-danger">Registrar</button>
-        <button type="reset" class="btn btn-dark">Cancelar</button>
+        <!-- <button type="submit" class="btn btn-danger">Registrar</button>
+        <button type="reset" class="btn btn-dark">Cancelar</button> -->
     </center>
     </form>
 </div>
 
 <script>listar_categorias();</script>
+<script>listar_proveedores();</script>

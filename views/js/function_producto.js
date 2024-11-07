@@ -23,7 +23,7 @@ async function insertar_producto() {
         const datos = new FormData(formInsertProducto);
         // Enviar datos hacia el controlador
         // await = promesa
-        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=registrar',{
+        let respuesta = await fetch(base_url + '/controller/Producto.php?tipo=registrar',{
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
@@ -43,20 +43,49 @@ async function insertar_producto() {
 }
 
 async function listar_categorias() {
-    try{
-        let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=listar');
+    try {
+        let respuesta = await fetch(base_url + '/controller/Categoria.php?tipo=listar');
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
+            let contenido_select = '<option value="" disabled selected>Seleccione</option>'; // Sin jquery
             datos.forEach(element => {
-                $('#idCategoria').append($('<option />'), {
+                contenido_select += '<option value="' + element.id + '">' + element.nombre + '</option>'; // Sin jquery
+
+                // Para trabajar con jquery
+                /*$('#idCategoria').append($('<option />', {
                     text: `${element.nombre}` ,
                     value: `${element.id}`
-                });
+                }));*/
             });
+            document.getElementById('idCategoria').innerHTML = contenido_select; // Sin jquery
         }
         console.log(respuesta);
     }catch(e){
         console.log("Error al cargar categorias." + e);
+    }
+}
+
+async function listar_proveedores() {
+    try {
+        let respuesta = await fetch(base_url + '/controller/Proveedor.php?tipo=listar');
+        json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let contenido_select = '<option value="" disabled selected>Seleccione</option>'; // Sin jquery
+            datos.forEach(element => {
+                contenido_select += '<option value="' + element.id + '">' + element.razon_social + '</option>'; // Sin jquery
+
+                // Para trabajar con jquery
+                /*$('#idProveedor').append($('<option />', {
+                    text: `${element.razon_social}` ,
+                    value: `${element.id}`
+                }));*/
+            });
+            document.getElementById('idProveedor').innerHTML = contenido_select; // Sin jquery
+        }
+        console.log(respuesta);
+    }catch(e){
+        console.log("Error al cargar proveedores." + e);
     }
 }

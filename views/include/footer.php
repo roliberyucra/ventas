@@ -47,6 +47,8 @@
         -->
     </div>
 
+    <script src="<?php echo BASE_URL; ?>/views/js/jquery-3.6.0.min.js"></script>
+
     <!-- Script Mensaje de alter (Anibal) -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Fin Script Mensaje de alter (Anibal) -->
@@ -56,6 +58,7 @@
      src="https://code.jquery.com/jquery-3.7.1.js"
      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
      crossorigin="anonymous"></script>
+
 </body>
     
 </html>
