@@ -42,30 +42,6 @@ async function insertar_producto() {
     }
 }
 
-async function listar_categorias() {
-    try {
-        let respuesta = await fetch(base_url + '/controller/Categoria.php?tipo=listar');
-        json = await respuesta.json();
-        if (json.status) {
-            let datos = json.contenido;
-            let contenido_select = '<option value="" disabled selected>Seleccione</option>'; // Sin jquery
-            datos.forEach(element => {
-                contenido_select += '<option value="' + element.id + '">' + element.nombre + '</option>'; // Sin jquery
-
-                // Para trabajar con jquery
-                /*$('#idCategoria').append($('<option />', {
-                    text: `${element.nombre}` ,
-                    value: `${element.id}`
-                }));*/
-            });
-            document.getElementById('idCategoria').innerHTML = contenido_select; // Sin jquery
-        }
-        console.log(respuesta);
-    }catch(e){
-        console.log("Error al cargar categorias." + e);
-    }
-}
-
 async function listar_proveedores() {
     try {
         let respuesta = await fetch(base_url + '/controller/Proveedor.php?tipo=listar');
@@ -87,5 +63,29 @@ async function listar_proveedores() {
         console.log(respuesta);
     }catch(e){
         console.log("Error al cargar proveedores." + e);
+    }
+}
+
+async function listar_productos() {
+    try {
+        let respuesta = await fetch(base_url + '/controller/Producto.php?tipo=listar');
+        json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let contenido_select = '<option value="" disabled selected>Seleccione</option>'; // Sin jquery
+            datos.forEach(element => {
+                contenido_select += '<option value="' + element.id + '">' + element.nombre + '</option>'; // Sin jquery
+
+                // Para trabajar con jquery
+                /*$('#idProveedor').append($('<option />', {
+                    text: `${element.razon_social}` ,
+                    value: `${element.id}`
+                }));*/
+            });
+            document.getElementById('idProducto').innerHTML = contenido_select; // Sin jquery
+        }
+        console.log(respuesta);
+    }catch(e){
+        console.log("Error al cargar productos." + e);
     }
 }

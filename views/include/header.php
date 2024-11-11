@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/views/plantilla/css/style.css">
     <link rel="icon" href="<?php echo BASE_URL; ?>/views/plantilla/img/loguito.png" type="image/x-icon">
     <script src="<?php echo BASE_URL; ?>/views/js/function_producto.js"></script>
+    <script src="<?php echo BASE_URL; ?>/views/js/function_categoria.js"></script>
+    <script src="<?php echo BASE_URL; ?>/views/js/function_persona.js"></script>
+    <script src="<?php echo BASE_URL; ?>/views/js/function_compra.js"></script>
     <script>
         const base_url = '<?php echo BASE_URL; ?>';
     </script>
