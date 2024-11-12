@@ -61,6 +61,7 @@
                         <ul class="dropdown-menu" style="background-color: black; border-color: grey;">
                           <li><a class="dropdown-item" href="perfil.html"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Mi cuenta</font></font></a></li>
                           <li><a class="dropdown-item" href="login.html"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Cerrar sesión</font></font></a></li>
+                          <li><a class="dropdown-item" href="#"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Panel de Admin</font></font></a></li>
                         </ul>
                     </div>
                 </div>
