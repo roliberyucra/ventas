@@ -40,7 +40,7 @@
                             Categorias
                         </font></font></button>
                         <ul class="dropdown-menu" style="background-color: black; border-color: grey;">
-                          <li><a class="dropdown-item" href="perfil.html"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Mi cuenta</font></font></a></li>
+                          <li><a href="<?php echo BASE_URL; ?>/contactos"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Mi cuenta</font></font></a></li>
                           <li><a class="dropdown-item" href="login.html"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Cerrar sesión</font></font></a></li>
                         </ul>
                     </div>
