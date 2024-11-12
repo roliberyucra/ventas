@@ -12,7 +12,7 @@
         <div class="parte2">
             <h4>Navegación</h4>
             <ul>
-                <li><a href="content/p_informativas.html" target="_blank" style="text-decoration: none; color: white;">Quiénes Somos</a></li>
+                <li><a href="<?php echo BASE_URL; ?>/p_informativas" target="_blank" style="text-decoration: none; color: white;">Quiénes Somos</a></li>
                 <li><a href="https://ripleyperu.zendesk.com/hc/es/articles/360055893632-Conoce-nuestros-horarios-de-Tienda-Ripley" target="_blank" style="text-decoration: none; color: white;">Nuestras Tiendas</a></li>
                 <li><a href="https://ripleyperu.zendesk.com/hc/es/articles/360055893632-Conoce-nuestros-horarios-de-Tienda-Ripley" target="_blank" style="text-decoration: none; color: white;">Trabaja con Nosotros</a></li>
                 <li><a href="https://simple.ripley.com.pe/minisitios/especial/servicio-cliente#como-comprar" target="_blank" style="text-decoration: none; color: white;">Centro de Ayuda</a></li>

@@ -10,13 +10,13 @@
    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
        <div class="carousel-inner">
          <div class="carousel-item active">
-           <a href="descripcionComputadora.html"><img src="./views/plantilla/img/computadora12.png" class="d-block w-100" style="height: 850px;" alt="..."></a>
+           <a href="<?php echo BASE_URL; ?>/descripcionComputadora"><img src="./views/plantilla/img/computadora12.png" class="d-block w-100" style="height: 850px;" alt="..."></a>
          </div>
          <div class="carousel-item">
-           <a href="descripcionComputadora.html"><img src="./views/plantilla/img/computadora15.png" class="d-block w-100" style="height: 850px;" alt="..."></a>
+           <a href="<?php echo BASE_URL; ?>/descripcionComputadora"><img src="./views/plantilla/img/computadora15.png" class="d-block w-100" style="height: 850px;" alt="..."></a>
          </div>
          <div class="carousel-item">
-           <a href="descripcionComputadora.html"><img src="./views/plantilla/img/computadora1.png" class="d-block w-100" style="height: 850px;" alt="..."></a>
+           <a href="<?php echo BASE_URL; ?>/descripcionComputadora"><img src="./views/plantilla/img/computadora1.png" class="d-block w-100" style="height: 850px;" alt="..."></a>
          </div>
        </div>
        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -36,7 +36,7 @@
        <div id="productos_similares" class="col-9 row p-2 m-0">
            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                <div class="card" style="min-height: 400px;">
-                   <a href="descripcionComputadora.html"><img src="./views/plantilla/img/computadora1.png"
+                   <a href="<?php echo BASE_URL; ?>/descripcionComputadora"><img src="./views/plantilla/img/computadora1.png"
                        class="card-img-top w-100" alt="..." style="height: 400px;"></a>
                    <div class="card-body">
                        <div class="body_card" style="height: 40px;">
@@ -46,7 +46,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
@@ -63,7 +63,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
@@ -80,7 +80,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
@@ -97,14 +97,14 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
            </div>
            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                <div class="card" style="min-height: 400px;">
-                   <a href="descripcionComputadora.html"><img src="./views/plantilla/img/computadora5.jpg"
+                   <a href="<?php echo BASE_URL; ?>/descripcionComputadora"><img src="./views/plantilla/img/computadora5.jpg"
                        class="card-img-top w-100" alt="..." style="height: 400px;"></a>
                    <div class="card-body">
                        <div class="body_card" style="height: 40px;">
@@ -114,7 +114,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
@@ -131,7 +131,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
@@ -148,7 +148,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
@@ -165,14 +165,14 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
            </div>
            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                <div class="card" style="min-height: 400px;">
-                   <a href="descripcionComputadora.html"><img src="./views/plantilla/img/computadora9.jpg"
+                   <a href="<?php echo BASE_URL; ?>/descripcionComputadora"><img src="./views/plantilla/img/computadora9.jpg"
                        class="card-img-top w-100" alt="..." style="height: 400px;"></a>
                    <div class="card-body">
                        <div class="body_card" style="height: 40px;">
@@ -182,7 +182,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
@@ -199,7 +199,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
@@ -216,7 +216,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
@@ -233,7 +233,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
@@ -250,7 +250,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
@@ -267,7 +267,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
@@ -284,7 +284,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
@@ -301,7 +301,7 @@
                            <p class="card-text"></p>
                        </div><br>
                        <div class="text-center">
-                           <a href="carrito.html" class="btn btn-dark">Añadir a Carrito</a>
+                           <a href="<?php echo BASE_URL; ?>/carrito" class="btn btn-dark">Añadir a Carrito</a>
                        </div>
                    </div>
                </div>
