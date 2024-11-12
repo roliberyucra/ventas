@@ -121,7 +121,7 @@
            </div>
            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                <div class="card" style="min-height: 400px;">
-                   <a href="descripcionLaptop.html"><img src="./views/plantilla/img/computadora6.jpg"
+                   <a href="<?php echo BASE_URL; ?>/descripcionLaptop"><img src="./views/plantilla/img/computadora6.jpg"
                        class="card-img-top w-100" alt="..." style="height: 400px;"></a>
                    <div class="card-body">
                        <div class="body_card" style="height: 40px;">
@@ -138,7 +138,7 @@
            </div>
            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                <div class="card" style="min-height: 400px;">
-                       <a href="descripcionImpresoras.html"><img src="./views/plantilla/img/computadora7.jpg"
+                       <a href="<?php echo BASE_URL; ?>/descripcionImpresoras"><img src="./views/plantilla/img/computadora7.jpg"
                            class="card-img-top w-100" alt="..." style="height: 400px;"></a>
                    <div class="card-body">
                        <div class="body_card" style="height: 40px;">
@@ -155,7 +155,7 @@
            </div>
            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                <div class="card" style="min-height: 400px;">
-                   <a href="descripcionCamaras.html"><img src="./views/plantilla/img/computadora8.jpg"
+                   <a href="<?php echo BASE_URL; ?>/descripcionCamaras"><img src="./views/plantilla/img/computadora8.jpg"
                        class="card-img-top w-100" alt="..." style="height: 400px;"></a>
                    <div class="card-body">
                        <div class="body_card" style="height: 40px;">
@@ -189,7 +189,7 @@
            </div>
            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                <div class="card" style="min-height: 400px;">
-                   <a href="descripcionLaptop.html"><img src="./views/plantilla/img/computadora10.jpg"
+                   <a href="<?php echo BASE_URL; ?>/descripcionLaptop"><img src="./views/plantilla/img/computadora10.jpg"
                        class="card-img-top w-100" alt="..." style="height: 400px;"></a>
                    <div class="card-body">
                        <div class="body_card" style="height: 40px;">
@@ -206,7 +206,7 @@
            </div>
            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                <div class="card" style="min-height: 400px;">
-                       <a href="descripcionImpresoras.html"><img src="./views/plantilla/img/computadora11.jpg"
+                       <a href="<?php echo BASE_URL; ?>/descripcionImpresoras"><img src="./views/plantilla/img/computadora11.jpg"
                            class="card-img-top w-100" alt="..." style="height: 400px;"></a>
                    <div class="card-body">
                        <div class="body_card" style="height: 40px;">
@@ -223,7 +223,7 @@
            </div>
            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                <div class="card" style="min-height: 400px;">
-                   <a href="descripcionCamaras.html"><img src="./views/plantilla/img/computadora12.png"
+                   <a href="<?php echo BASE_URL; ?>/descripcionCamaras"><img src="./views/plantilla/img/computadora12.png"
                        class="card-img-top w-100" alt="..." style="height: 400px;"></a>
                    <div class="card-body">
                        <div class="body_card" style="height: 40px;">
@@ -240,7 +240,7 @@
            </div>
            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                <div class="card" style="min-height: 400px;">
-                       <a href="descripcionImpresoras.html"><img src="./views/plantilla/img/computadora13.jpg"
+                       <a href="<?php echo BASE_URL; ?>/descripcionImpresoras"><img src="./views/plantilla/img/computadora13.jpg"
                            class="card-img-top w-100" alt="..." style="height: 400px;"></a>
                    <div class="card-body">
                        <div class="body_card" style="height: 40px;">
@@ -257,7 +257,7 @@
            </div>
            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                <div class="card" style="min-height: 400px;">
-                       <a href="descripcionImpresoras.html"><img src="./views/plantilla/img/computadora14.jpg"
+                       <a href="<?php echo BASE_URL; ?>/descripcionImpresoras"><img src="./views/plantilla/img/computadora14.jpg"
                            class="card-img-top w-100" alt="..." style="height: 400px;"></a>
                    <div class="card-body">
                        <div class="body_card" style="height: 40px;">
@@ -274,7 +274,7 @@
            </div>
            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                <div class="card" style="min-height: 400px;">
-                       <a href="descripcionImpresoras.html"><img src="./views/plantilla/img/computadora15.png"
+                       <a href="<?php echo BASE_URL; ?>/descripcionImpresoras"><img src="./views/plantilla/img/computadora15.png"
                            class="card-img-top w-100" alt="..." style="height: 400px;"></a>
                    <div class="card-body">
                        <div class="body_card" style="height: 40px;">
@@ -291,7 +291,7 @@
            </div>
            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                <div class="card" style="min-height: 400px;">
-                       <a href="descripcionImpresoras.html"><img src="./views/plantilla/img/computadora16.jpg"
+                       <a href="<?php echo BASE_URL; ?>/descripcionImpresoras"><img src="./views/plantilla/img/computadora16.jpg"
                            class="card-img-top w-100" alt="..." style="height: 400px;"></a>
                    <div class="card-body">
                        <div class="body_card" style="height: 40px;">
