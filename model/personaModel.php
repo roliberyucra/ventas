@@ -15,5 +15,12 @@
             }
             return $arrRespuesta;
         }
+
+        public function registrarPersona($nroIdentidad, $razonSocial, $telefono, $departamento, $provincia, $distrito, $codPostal, $direccion, $rol, $correo, $contraseña, $estado, $fecha){
+            // Orden de la base de datos
+            $sql = $this->conexion->query("CALL registrar_persona('{$nroIdentidad}', '{$razonSocial}', '{$telefono}', '{$departamento}', '{$provincia}, '{$distrito}, '{$codPostal}, '{$direccion}, '{$rol}, '{$correo}, '{$contraseña}, '{$estado}, '{$fecha}')");
+            $sql = $sql->fetch_object();
+            return $sql;
+        }
     }
 ?>

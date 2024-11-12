@@ -12,7 +12,7 @@ if ($tipo == 'listar') {
     if (!empty($arr_Personas)) {
         // Recorremos el array para agregar las opciones den las categorias
         for ($i=0; $i < count($arr_Personas); $i++) {
-            $idCategoria = $arr_Personas[$i]->id;
+            $idPersona = $arr_Personas[$i]->id;
             $persona = $arr_Personas[$i]->razon_social;
             $opciones = '';
             $arr_Personas[$i]->options = $opciones;
@@ -45,8 +45,8 @@ if ($tipo == 'registrar') {
             $arr_Respuesta = array('status'=>false,'mensaje'=>'Error, campos vacíos');
         }else{
             // Aqui se guardará la respuesta del modelo
-            $arrCompra = $objCompra->registrarCompra(
-                $idProducto, $cantidad, $precio, $fecha, $idPersona);
+            $arrPersona = $objPersona->registrarPersona(
+                $nroIdentidad, $razonSocial, $telefono, $departamento, $provincia, $distrito, $codPostal, $direccion, $rol, $correo, $contraseña, $estado, $fecha);
 
             if ($arrCompra->id>0) {
                 $arr_Respuesta = array('status'=>true,'mensaje'=>'Registro exitoso.');
