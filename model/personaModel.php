@@ -7,6 +7,8 @@
             $this->conexion = $this->conexion->connect();
         }
 
+        // OBTENER CLIENTES
+        // OBTENER CLIENTES
         public function obtener_personas(){
             $arrRespuesta = array();
             $respuesta = $this->conexion->query("SELECT * FROM persona WHERE rol = 'Cliente' ");
@@ -21,6 +23,24 @@
             $sql = $this->conexion->query("CALL registrar_persona('{$nroIdentidad}', '{$razonSocial}', '{$telefono}', '{$departamento}', '{$provincia}', '{$distrito}', '{$codPostal}', '{$direccion}', '{$rol}', '{$correo}', '{$contraseña}', '{$estado}', '{$fecha}')");
             $sql = $sql->fetch_object();
             return $sql;
+        }
+    }
+
+    class proveedorModel{
+        private $conexion;
+        function __construct(){
+            $this->conexion = new Conexion();
+            $this->conexion = $this->conexion->connect();
+        }
+        // OBTENER PROVEEDORES
+        // OBTENER PROVEEDORES
+        public function obtener_proveedores(){
+            $arrRespuesta = array();
+            $respuesta = $this->conexion->query("SELECT * FROM persona WHERE rol = 'Proveedor' ");
+            while ($objeto = $respuesta->fetch_object()) {
+                array_push($arrRespuesta, $objeto);
+            }
+            return $arrRespuesta;
         }
     }
 ?>
