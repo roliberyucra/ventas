@@ -20,7 +20,7 @@ async function iniciar_sesion() {
         json = await respuesta.json();
         if (json.status) {
             //swal("Iniciar sesion", json.mensaje, "success");
-            location.replace(base_url + 'producto');
+            location.replace(base_url + '/producto');
         }else{
             swal("Iniciar sesion", json.mensaje, "error");
         }
@@ -49,7 +49,7 @@ async function cerrar_sesion() {
         });
         json = await respuesta.json();
         if (json.status) {
-            location.replace(base_url + 'login');
+            location.replace(base_url + '/login');
         }
     } catch (error) {
         console.log("Ups, ocurrió un error" + error);
