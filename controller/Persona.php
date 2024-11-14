@@ -25,8 +25,7 @@ if ($tipo == 'listar') {
 }
 
 // Registrar PERSONA
-if ($tipo == 'registrar') {
-
+if ($tipo == 'registrar') { 
     if ($_POST) {
         $nroIdentidad = $_POST['nroIdentidad'];
         $razonSocial = $_POST['razonSocial'];
@@ -38,27 +37,33 @@ if ($tipo == 'registrar') {
         $direccion = $_POST['direccion'];
         $rol = $_POST['rol'];
         $correo = $_POST['correo'];
-        $contraseña = $_POST['contraseña'];
-        $estado = $_POST['estado'];
-        $fecha = $_POST['fecha'];
-        if ($nroIdentidad == "" || $razonSocial == "" || $telefono == "" || $departamento == "" || $provincia == "" || $distrito == "" || $codPostal == "" || $direccion == "" || $rol == "" || $correo == "" || $contraseña == "" || $estado == "" || $fecha == "") {
-            // respuesta
-            $arr_Respuesta = array('status'=>false,'mensaje'=>'Error, campos vacíos');
-        }else{
-            // Aqui se guardará la respuesta del modelo
+        $contraseña = $_POST['nroIdentidad'];
+
+        // Validación de campos vacíos
+        if ($nroIdentidad == "" || $razonSocial == "" || $telefono == "" || $departamento == "" || $provincia == "" || $distrito == "" || $codPostal == "" || $direccion == "" || $rol == "" || $correo == "" || $contraseña == "") {
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
+        } else {
+            // Hashear la contraseña
+            //$contraseñaHasheada = md5($contraseña);
+
+            // Hashear Forma Anibal
+            $contraseñaHasheada = password_hash($contraseña, PASSWORD_DEFAULT);
+
+            // Guardar los datos en la base de datos, incluyendo la contraseña hasheada
             $arrPersona = $objPersona->registrarPersona(
-                $nroIdentidad, $razonSocial, $telefono, $departamento, $provincia, $distrito, $codPostal, $direccion, $rol, $correo, $contraseña, $estado, $fecha);
+                $nroIdentidad, $razonSocial, $telefono, $departamento, $provincia, $distrito, $codPostal, $direccion, $rol, $correo, $contraseñaHasheada);
 
-            if ($arrCompra->id>0) {
-                $arr_Respuesta = array('status'=>true,'mensaje'=>'Registro exitoso.');
-
-            }else{
-                $arr_Respuesta = array('status'=>false,'mensaje'=>'Error al registrar producto.');
+            if ($arrPersona->id > 0) {
+                $arr_Respuesta = array('status' => true, 'mensaje' => 'Registro exitoso.');
+            } else {
+                $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al registrar persona.');
             }
+
+            // Enviar la respuesta como JSON
             echo json_encode($arr_Respuesta);
         }
-
     }
 }
+
 
 ?>

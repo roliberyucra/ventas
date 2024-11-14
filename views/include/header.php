@@ -56,11 +56,11 @@
                 <div class="bloque_sesion">
                     <div class="dropdown-center" style="background-color: black;">
                         <button id="buton_menu" class="btn btn-secondary dropdown-toggle" style="background-color: black; border-color: black;" type="button" data-bs-toggle="dropdown" aria-expanded="false"><font style="vertical-align: inherit; background-color: black;"><font style="vertical-align: inherit; background-color: black;">
-                            Hola, Roliber
+                            <?php echo $_SESSION['sesion_ventas_nombres'] ?><!-- Hola, Roliber -->
                         </font></font></button>
                         <ul class="dropdown-menu" style="background-color: black; border-color: grey;">
                           <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/perfil"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Mi cuenta</font></font></a></li>
-                          <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/login"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Cerrar sesión</font></font></a></li>
+                          <li><a class="dropdown-item" onclick="cerrar_sesion();"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Cerrar sesión</font></font></a></li>
                           <li><a class="dropdown-item" href="#"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Panel de Admin</font></font></a></li>
                         </ul>
                     </div>

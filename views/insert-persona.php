@@ -51,20 +51,10 @@
         <input type="email" class="form-control" id="correo" placeholder="Correo*" name="correo">
     </div>
 
-    <div class="mb-3">
+    <!-- <div class="mb-3">
         <label for="contraseña" class="form-label">Contraseña: </label>
         <input type="password" class="form-control" id="contraseña" placeholder="Contraseña*" name="contraseña">
-    </div>
-
-    <div class="mb-3">
-        <label for="estado" class="form-label">Estado: </label>
-        <input type="number" class="form-control" id="estado" min="0" max="1" placeholder="Estado*" name="estado">
-    </div>
-
-    <div class="mb-3">
-        <label for="fecha" class="form-label">Fecha de registro: </label>
-        <input type="date" class="form-control" id="fecha" placeholder="Fecha de registro*" name="fecha">
-    </div>
+    </div> -->
     <center>
         <button type="button" onclick="insertar_persona()" class="btn btn-danger">Insertar</button>
         <!-- <button type="submit" class="btn btn-danger">Registrar</button>

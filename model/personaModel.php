@@ -18,9 +18,16 @@
             return $arrRespuesta;
         }
 
-        public function registrarPersona($nroIdentidad, $razonSocial, $telefono, $departamento, $provincia, $distrito, $codPostal, $direccion, $rol, $correo, $contraseña, $estado, $fecha){
+        public function registrarPersona($nroIdentidad, $razonSocial, $telefono, $departamento, $provincia, $distrito, $codPostal, $direccion, $rol, $correo, $contraseña){
             // Orden de la base de datos
-            $sql = $this->conexion->query("CALL registrar_persona('{$nroIdentidad}', '{$razonSocial}', '{$telefono}', '{$departamento}', '{$provincia}', '{$distrito}', '{$codPostal}', '{$direccion}', '{$rol}', '{$correo}', '{$contraseña}', '{$estado}', '{$fecha}')");
+            $sql = $this->conexion->query("CALL registrar_persona('{$nroIdentidad}', '{$razonSocial}', '{$telefono}', '{$departamento}', '{$provincia}', '{$distrito}', '{$codPostal}', '{$direccion}', '{$rol}', '{$correo}', '{$contraseña}')");
+            $sql = $sql->fetch_object();
+            return $sql;
+        }
+
+        //
+        public function buscarPersonaPorDNI($password){
+            $sql = $this->conexion->query("SELECT*FROM persona WHERE nro_identidad = '{$password}'");
             $sql = $sql->fetch_object();
             return $sql;
         }

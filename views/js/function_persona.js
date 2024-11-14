@@ -33,11 +33,9 @@ async function insertar_persona() {
     let direccion = document.querySelector('#direccion').value;
     let rol = document.querySelector('#rol').value;
     let correo = document.querySelector('#correo').value;
-    let contraseña = document.querySelector('#contraseña').value;
-    let estado = document.querySelector('#estado').value;
-    let fecha = document.querySelector('#fecha').value;
+    let contraseña = document.querySelector('#nroIdentidad').value;
     
-    if (nroIdentidad == "" || razonSocial == "" || telefono == "" || departamento == "" || provincia == "" || distrito == "" || codPostal == "" || direccion == "" || rol == "" || correo == "" || contraseña == "" || estado == "" || fecha == "") {
+    if (nroIdentidad == "" || razonSocial == "" || telefono == "" || departamento == "" || provincia == "" || distrito == "" || codPostal == "" || direccion == "" || rol == "" || correo == "" || contraseña == "") {
         alert("Error, campos vacíos");
         return;
     }
