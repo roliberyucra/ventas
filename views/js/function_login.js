@@ -41,7 +41,7 @@ if (document.querySelector('#form_iniciar_sesion')) {
 
 async function cerrar_sesion() {
     try {
-        let respuesta = await fetch(base_url + '/controller/Login.php? tipo=cerrar_sesion',{
+        let respuesta = await fetch(base_url + '/controller/Login.php?tipo=cerrar_sesion',{
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
