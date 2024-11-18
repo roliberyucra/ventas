@@ -22,7 +22,7 @@ async function iniciar_sesion() {
             //swal("Iniciar sesion", json.mensaje, "success");
             location.replace(base_url + '/producto');
         }else{
-            swal("Iniciar sesion", json.mensaje, "error");
+            swal("Iniciar sesion", json.mensaje, 'error');
         }
 
         console.log(json);
