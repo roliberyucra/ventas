@@ -23,7 +23,7 @@ require_once("../model/personaModel.php");
                 $_SESSION['sesion_ventas_nombres'] = $arrPersona->razon_social;
                 $arrResponse = array('status'=> true, 'msg'=>'Ingresar al sistema.');
             }else {
-                $arrResponse = array('status'=> false, 'msg'=>'La contrasenia es incorrecta.');
+                $arrResponse = array('status'=> false, 'msg'=>'La contraseña es incorrecta.');
             }
         }
         echo json_encode($arrResponse);

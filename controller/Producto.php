@@ -22,25 +22,18 @@
             $fechaVencimiento = $_POST['fechaVencimiento'];
             /* $imagen1 = $_POST['imagen1']; */
             $imagen1 = 'imagen1';
-            $imagen2 = 'imagen2';
-            $imagen3 = 'imagen3';
-            $imagen4 = 'imagen4';
             $idProveedor = $_POST['idProveedor'];
-            if ($codigo == "" || $nombre == "" || $detalle == "" || $precio == "" || $stock == "" || $idCategoria == "" || $fechaVencimiento == "" || $imagen1 == "" || $imagen2 == "" || $imagen3 == "" || $imagen4 == "" || $idProveedor == "") {
+            if ($codigo == "" || $nombre == "" || $detalle == "" || $precio == "" || $stock == "" || $idCategoria == "" || $fechaVencimiento == "" || $imagen1 == "" || $idProveedor == "") {
                 // respuesta
                 $arr_Respuesta = array('status'=>false,'mensaje'=>'Error, campos vacíos');
             }else{
                 // Aqui se guardará la respuesta del modelo
                 $arrProducto = $objProducto->registrarProducto(
-                    $codigo, $nombre, $detalle, $precio, $stock, $idCategoria , $fechaVencimiento, $imagen1, $imagen2, $imagen3, $imagen4, $idCategoria, $idProveedor);
+                    $codigo, $nombre, $detalle, $precio, $stock, $idCategoria , $fechaVencimiento, $imagen1, $idCategoria, $idProveedor);
 
                 if ($arrProducto->id>0) {
                     $arr_Respuesta = array('status'=>true,'mensaje'=>'Registro exitoso.');
-
                     $archivo = $_FILES['imagen1']['tmp_name'];
-                    /* $archivo = $_FILES['imagen2']['tmp_name'];
-                    $archivo = $_FILES['imagen3']['tmp_name'];
-                    $archivo = $_FILES['imagen4']['tmp_name']; */
                     $destino = './assets/img_productos/';
                     $tipoArchivo = strtolower(pathinfo($_FILES["imagen1"]["name"], PATHINFO_EXTENSION));
 

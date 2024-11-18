@@ -47,21 +47,6 @@
     </div>
 
     <div class="mb-3">
-        <label for="img2" class="form-label">Imagen de producto 2: </label>
-        <input type="file" class="form-control" id="imagen2" name="imagen2">
-    </div>
-
-    <div class="mb-3">
-        <label for="img3" class="form-label">Imagen de producto 3: </label>
-        <input type="file" class="form-control" id="imagen3" name="imagen3">
-    </div>
-
-    <div class="mb-3">
-        <label for="img4" class="form-label">Imagen de producto 4: </label>
-        <input type="file" class="form-control" id="imagen4" name="imagen4">
-    </div>
-
-    <div class="mb-3">
         <label for="idProveedor" class="form-label">Proveedor: </label>
         <select class="form-control" name="idProveedor" id="idProveedor" required>
         <option disabled>Seleccione</option>

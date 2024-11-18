@@ -45,7 +45,7 @@ async function cerrar_sesion() {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
-            body: datos
+           
         });
         json = await respuesta.json();
         if (json.status) {
