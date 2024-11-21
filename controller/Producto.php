@@ -37,10 +37,10 @@
                     $destino = './assets/img_productos/';
                     $tipoArchivo = strtolower(pathinfo($_FILES["imagen1"]["name"], PATHINFO_EXTENSION));
 
-                    $nombre = $arrProducto->id."".$tipoArchivo;
+                    $nombre = $arrProducto->id. " . " .$tipoArchivo;
 
                     if (move_uploaded_file($archivo,$destino.$nombre)) {
-                        $arr_imagen = $objProducto->actualizar_imagen($id,$nombre);
+                        // $arr_imagen = $objProducto->actualizar_imagen($id,$nombre);
                     }else {
                         $arr_Respuesta = array('status' => true, 'mensaje' => 'Registro exitoso, error al subir imagen.');
                     }
