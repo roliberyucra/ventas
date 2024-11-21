@@ -10,7 +10,7 @@ body{
     height: auto;
     min-height: 250px;
     background-color: red;
-    color: white;
+    color: black;
     justify-content: flex-end;
 }
 

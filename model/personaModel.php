@@ -9,6 +9,8 @@
 
         // OBTENER CLIENTES
         // OBTENER CLIENTES
+
+        // Todas las personas
         public function obtener_personas(){
             $arrRespuesta = array();
             $respuesta = $this->conexion->query("SELECT * FROM persona WHERE rol = 'Cliente' ");
@@ -16,6 +18,13 @@
                 array_push($arrRespuesta, $objeto);
             }
             return $arrRespuesta;
+        }
+
+        // Por ID
+        public function obtener_persona($id){
+            $respuesta = $this->conexion->query("SELECT * FROM persona WHERE id='{$id}'");
+            $objeto = $respuesta->fetch_object();
+            return $objeto;
         }
 
         public function registrarPersona($nroIdentidad, $razonSocial, $telefono, $departamento, $provincia, $distrito, $codPostal, $direccion, $rol, $correo, $contraseña){

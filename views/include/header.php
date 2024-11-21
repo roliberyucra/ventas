@@ -40,7 +40,11 @@
                             Categorias
                         </font></font></button>
                         <ul class="dropdown-menu" style="background-color: black; border-color: grey;">
-                          <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/contactos"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Mi cuenta</font></font></a></li>
+                          <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/contactos"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Computadoras</font></font></a></li>
+                          <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/perfil"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Laptops</font></font></a></li>
+                          <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/contactos"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Impresoras</font></font></a></li>
+                          <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/perfil"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Celulares</font></font></a></li>
+                          <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/contactos"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;"></font></font></a></li>
                           <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/perfil"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Cerrar sesión</font></font></a></li>
                         </ul>
                     </div>
@@ -56,7 +60,7 @@
                 <div class="bloque_sesion">
                     <div class="dropdown-center" style="background-color: black;">
                         <button id="buton_menu" class="btn btn-secondary dropdown-toggle" style="background-color: black; border-color: black;" type="button" data-bs-toggle="dropdown" aria-expanded="false"><font style="vertical-align: inherit; background-color: black;"><font style="vertical-align: inherit; background-color: black;">
-                            <?php echo $_SESSION['sesion_ventas_nombres'] ?><!-- Hola, Roliber -->
+                            <?php echo 'Hola, ' . $_SESSION['sesion_ventas_nombres'] ?><!-- Hola, Roliber -->
                         </font></font></button>
                         <ul class="dropdown-menu" style="background-color: black; border-color: grey;">
                           <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>/perfil"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Mi cuenta</font></font></a></li>

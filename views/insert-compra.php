@@ -39,5 +39,5 @@
     </form>
 </div>
 
-<script>listar_productos();</script>
+<script>listar_productosP();</script>
 <script>listar_personas();</script>

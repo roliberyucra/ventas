@@ -1,3 +1,42 @@
+async function listar_productos() {
+    try {
+        let respuesta = await fetch(base_url + '/controller/Producto.php?tipo=listar');
+        json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let cont = 0;
+            datos.forEach(item => {
+                let nueva_fila = document.createElement("tr");
+                // "nueva_fila.id" = id de la nueva fila, "item.id" = id de la base de datos(producto)
+                nueva_fila.id = "fila" + item.id;
+                // Sumar 1 al contador
+                /* cont+=1; */
+                cont++;
+                // los items.xx vienen De la Base de datos
+                nueva_fila.innerHTML = `
+                    <th>${cont}</th>
+                    <td>${item.codigo}</td>
+                    <td>${item.nombre}</td>
+                    <td>${item.precio}</td>
+                    <td>${item.stock}</td>
+                    <td>${item.categoria.nombre}</td>
+                    <td>${item.proveedor.razon_social}</td>
+                    <td>${item.codigo}</td>
+                    <td></td>
+                `;
+                document.querySelector('#tbl_producto').appendChild(nueva_fila);
+            });
+        }
+        console.log(json);
+    } catch (e) {
+        console.log("Ups, ocurrió un error " + e);
+    }
+}
+
+if (document.querySelector('#tbl_producto')) {
+    listar_productos();
+}
+
 async function insertar_producto() {
     let codigo = document.getElementById('codigo').value;
     let nombre = document.querySelector('#nombre').value;
@@ -8,19 +47,19 @@ async function insertar_producto() {
     let fechaVencimiento = document.querySelector('#fechaVencimiento').value;
     let imagen1 = document.querySelector('#imagen1').value;
     let idProveedor = document.querySelector('#idProveedor').value;
-    
+
     if (codigo == "" || nombre == "" || detalle == "" || precio == "" || stock == "" || fechaVencimiento == "" || idCategoria == "" || imagen1 == "" || idProveedor == "") {
         alert("Error, campos vacíos");
         return;
     }
 
-// Mostrar error en caso de codigo roto
+    // Mostrar error en caso de codigo roto
     try {
         // Capturar los datos del formulario y guardarlos en la constante "datos"
         const datos = new FormData(formInsertProducto);
         // Enviar datos hacia el controlador
         // await = promesa
-        let respuesta = await fetch(base_url + '/controller/Producto.php?tipo=registrar',{
+        let respuesta = await fetch(base_url + '/controller/Producto.php?tipo=registrar', {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
@@ -29,7 +68,7 @@ async function insertar_producto() {
         json = await respuesta.json();
         if (json.status) {
             swal("Registro", json.mensaje, "success");
-        }else{
+        } else {
             swal("Registro", json.mensaje, "error");
         }
 
@@ -58,14 +97,14 @@ async function listar_proveedores() {
             document.getElementById('idProveedor').innerHTML = contenido_select; // Sin jquery
         }
         console.log(respuesta);
-    }catch(e){
+    } catch (e) {
         console.log("Error al cargar proveedores." + e);
     }
 }
 
-async function listar_productos() {
+  async function listar_productosP() {
     try {
-        let respuesta = await fetch(base_url + '/controller/Producto.php?tipo=listar');
+        let respuesta = await fetch(base_url + '/controller/Producto.php?tipo=listarP');
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;

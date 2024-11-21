@@ -7,6 +7,7 @@
             $this->conexion = $this->conexion->connect();
         }
 
+        // Todas las categorias
         public function obtener_categorias(){
             $arrRespuesta = array();
             $respuesta = $this->conexion->query("SELECT * FROM categoria");
@@ -14,6 +15,13 @@
                 array_push($arrRespuesta, $objeto);
             }
             return $arrRespuesta;
+        }
+
+        // Por ID
+        public function obtener_categoria($id){
+            $respuesta = $this->conexion->query("SELECT * FROM categoria WHERE id='{$id}'");
+            $objeto = $respuesta->fetch_object();
+            return $objeto;
         }
 
         public function registrarCategoria($nombre, $detalle){
