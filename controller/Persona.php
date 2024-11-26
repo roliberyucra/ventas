@@ -24,6 +24,26 @@ if ($tipo == 'listar') {
     echo json_encode($arr_Respuesta);
 }
 
+if ($tipo == 'listarAdmin') {
+    //respuesta
+    //respuesta
+    $arr_Respuesta = array('status'=>false, 'contenido'=>'');
+    $arr_Personas = $objPersona->obtener_personas_admin();
+    if (!empty($arr_Personas)) {
+        // Recorremos el array para agregar las opciones den las categorias
+        for ($i=0; $i < count($arr_Personas); $i++) {
+            $idPersona = $arr_Personas[$i]->id;
+            $persona = $arr_Personas[$i]->razon_social;
+            $opciones = '';
+            $arr_Personas[$i]->options = $opciones;
+        }
+        $arr_Respuesta['status'] = true;
+        $arr_Respuesta['contenido'] = $arr_Personas;
+    }
+
+    echo json_encode($arr_Respuesta);
+}
+
 // Registrar PERSONA
 if ($tipo == 'registrar') { 
     if ($_POST) {

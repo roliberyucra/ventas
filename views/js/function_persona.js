@@ -22,6 +22,48 @@ async function listar_personas() {
     }
 }
 
+async function listar_personas_admin() {
+    try {
+        let respuesta = await fetch(base_url + '/controller/Persona.php?tipo=listarAdmin');
+        json = await respuesta.json();
+        if (json.status) {
+            let datos = json.contenido;
+            let cont = 0;
+            datos.forEach(item => {
+                let nueva_fila = document.createElement("tr");
+                // "nueva_fila.id" = id de la nueva fila, "item.id" = id de la base de datos(producto)
+                nueva_fila.id = "fila" + item.id;
+                // Sumar 1 al contador
+                /* cont+=1; */
+                cont++;
+                // los items.xx vienen De la Base de datos
+                nueva_fila.innerHTML = `
+                    <th>${cont}</th>
+                    <td>${item.nro_identidad}</td>
+                    <td>${item.razon_social}</td>
+                    <td>${item.telefono}</td>
+                    <td>${item.correo}</td>
+                    <td>${item.cod_postal}</td>
+                    <td>${item.direccion}</td>
+                    <td>${item.rol}</td>
+                    <td>${item.nro_identidad}</td>
+                    <td></td>
+                `;
+                document.querySelector('#tbl_persona').appendChild(nueva_fila);
+            });
+        }
+        console.log(json);
+    } catch (e) {
+        console.log("Ups, ocurrió un error " + e);
+    }
+}
+
+// Verificar si hay una tabla o un contenedor con el id tbl_persona en la página.
+// Si existe, se ejecuta una función listar_personas_admin() responsable de mostrar o listar datos de personas
+if (document.querySelector('#tbl_persona')) {
+    listar_personas_admin();
+}
+
 async function insertar_persona() {
     let nroIdentidad = document.getElementById('nroIdentidad').value;
     let razonSocial = document.querySelector('#razonSocial').value;

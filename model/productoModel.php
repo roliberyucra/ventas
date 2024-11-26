@@ -28,6 +28,14 @@ class ProductoModel{
         }
         return $arrRespuesta;
     }
+
+    //Obtener productos por id (Administrador)
+    public function obtener_producto_id($id)
+    {
+        $respuesta = $this->conexion->query("SELECT nombre FROM producto WHERE id = '{$id}'");
+        $objeto = $respuesta->fetch_object();
+        return $objeto;
+    }
 }
 
 ?>
