@@ -61,10 +61,10 @@
             <!-- Formulario de login -->
             <form id="form_iniciar_sesion" action="">
                 <div class="form-input">
-                    <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Correo*" required>
+                    <input type="text" class="form-control" name="usuario" placeholder="Correo*" required>
                 </div>
                 <div class="form-input">
-                    <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña*" required>
+                    <input type="password" class="form-control" name="password" placeholder="Contraseña*" required>
                 </div>
                 <button type="submit" class="btn btn-custom w-100">Iniciar sesión</button>
             </form>
