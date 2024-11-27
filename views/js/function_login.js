@@ -1,6 +1,6 @@
 async function iniciar_sesion() {
     let usuario = document.querySelector('#usuario');
-    let password = document.querySelector('#usuario');
+    let password = document.querySelector('#password');
     if (usuario ==  "" || password == "") {
         alert('Campos vacíos');
         return;

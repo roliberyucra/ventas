@@ -8,7 +8,7 @@ require_once("../model/personaModel.php");
     if ($tipo == "iniciar_sesion") {
     /* print_r($_POST); */
         $usuario = trim($_POST['usuario']);
-        $password = trim($_POST['password']);
+        $password = trim($_POST['usuario']);
         $arrResponse = array('status'=> false, 'msg'=>'');
 
         $arrPersona = $objPersona->buscarPersonaPorDNI($usuario);
