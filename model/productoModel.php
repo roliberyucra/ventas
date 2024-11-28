@@ -8,9 +8,9 @@ class ProductoModel{
         $this->conexion = $this->conexion->connect();
     }
 
-    public function registrarProducto($codigo, $nombre, $detalle, $precio, $stock, $idCategoria, $fechaVencimiento, $imagen1, $idProveedor){
+    public function registrarProducto($codigo, $nombre, $detalle, $precio, $stock, $idCategoria, $fechaVencimiento, $imagen1, $idProveedor, $tipo_archivo){
         // Orden de la base de datos
-        $sql = $this->conexion->query("CALL registrar_producto('{$codigo}', '{$nombre}', '{$detalle}', '{$precio}', '{$stock}', '{$idCategoria}', '{$fechaVencimiento}', '{$imagen1}', '{$idProveedor}')");
+        $sql = $this->conexion->query("CALL registrar_producto('{$codigo}', '{$nombre}', '{$detalle}', '{$precio}', '{$stock}', '{$idCategoria}', '{$fechaVencimiento}', '{$imagen1}', '{$idProveedor}', '{$tipo_archivo}')");
         $sql = $sql->fetch_object();
         return $sql;
     }
