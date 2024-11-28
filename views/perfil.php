@@ -4,7 +4,7 @@
                     <img src="./views/plantilla/img/perfil.jpg" height="100%" alt="">
                 </div>
                 <div class="nombre_usuario">
-                    <h6>Hola, Roliber Yucra</h6>
+                    <h6><?php echo 'Hola, ' . $_SESSION['sesion_ventas_nombres'] ?></h6>
                 </div>
                 <button class="opciones_cuenta" onclick="window.location.href = './perfil.html';"><h5>Mi perfil</h5></button>
                 <button class="opciones_cuenta" onclick="window.location.href = './compras.html';"><h5>Mis compras</h5></button>
@@ -20,11 +20,11 @@
                     </div>
                     <div class="datos_perfil">
                         <h6>Nombres: </h6>
-                        <input type="text" class="name" placeholder="Roliber Nerio">
+                        <input type="text" class="name" placeholder="<?php echo $_SESSION['sesion_ventas_nombres'] ?>">
                     </div>
                     <div class="datos_perfil">
                         <h6>Apellidos: </h6>
-                        <input type="text" class="name" placeholder="Yucra Curo">
+                        <input type="text" class="name" placeholder="<?php echo $_SESSION['sesion_ventas_dni'] ?>">
                     </div>
                     <div class="datos_perfil">
                         <h6>Email: </h6>
@@ -33,7 +33,7 @@
                     <div class="datos_perfil_numericos">
                         <div class="dato_telefono">
                             <h6>Telefono: </h6>
-                            <input type="number" class="name" placeholder="+51 970 273 741">
+                            <input type="number" class="name" placeholder="<?php echo $_SESSION['sesion_ventas_dni'] ?>">
                         </div>
                         <div class="dato_fecha">
                             <h6>Fecha de nacimiento: </h6>
