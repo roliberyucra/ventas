@@ -6,7 +6,6 @@ require_once("../model/personaModel.php");
     $tipo = $_GET['tipo'];
 
     if ($tipo == "iniciar_sesion") {
-    /* print_r($_POST); */
         $usuario = trim($_POST['usuario']);
         $password = trim($_POST['password']);
         $arrResponse = array('status'=> false, 'msg'=>'');

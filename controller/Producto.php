@@ -26,7 +26,8 @@
 
                 $idProducto = $arr_Productos[$i]->id;
                 $producto = $arr_Productos[$i]->nombre;
-                $opciones = '';
+                                     //Redirigir al archivo editar-producto                    //Llamar a la funcion eliminar_producto()
+                $opciones = '<a href="'.BASE_URL.'/editar-producto/'.$idProducto.'"><i class="fas fa-edit"></i>Editar</a><button onclick="eliminar_producto('.$idProducto.');">Eliminar</button>';
                 $arr_Productos[$i]->options = $opciones;
             }
             $arr_Respuesta['status'] = true;
@@ -37,7 +38,6 @@
     }
 
     if ($tipo == 'registrar') {
-        //print_r($_POST);
         //echo $_FILES['imagen1']['name'];
         /* echo $_FILES['imagen2']['name'];
         echo $_FILES['imagen3']['name'];
@@ -112,6 +112,26 @@
         }
     
         echo json_encode($arr_Respuesta);
+    }
+
+    if ($tipo == 'ver') {
+        $id_producto = $_POST['id_producto'];
+        $arr_Respuesta = $objProducto->verProducto($id_producto);
+        /* print_r($arr_Respuesta); */
+        if (empty($arr_Respuesta)) {
+            $response = array('status' => false, 'mensaje' => "Error, no hay informacion.");
+        }else {
+            $response = array('status' => true, 'mensaje' => "Datos encontrados", 'contenido' => $arr_Respuesta);
+        }
+        echo json_encode($response);
+    }
+
+    if ($tipo == 'actualizar') {
+        # code...
+    }
+
+    if ($tipo == 'eliminar') {
+        # code...
     }
 
 ?> 

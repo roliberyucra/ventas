@@ -21,7 +21,7 @@ async function listar_productos() {
                     <td>${item.stock}</td>
                     <td>${item.categoria.nombre}</td>
                     <td>${item.proveedor.razon_social}</td>
-                    <td>${item.codigo}</td>
+                    <td>${item.options}</td>
                     <td></td>
                 `;
                 document.querySelector('#tbl_producto').appendChild(nueva_fila);
@@ -102,7 +102,7 @@ async function listar_proveedores() {
     }
 }
 
-  async function listar_productosP() {
+async function listar_productosP() {
     try {
         let respuesta = await fetch(base_url + '/controller/Producto.php?tipo=listarP');
         json = await respuesta.json();
@@ -123,5 +123,33 @@ async function listar_proveedores() {
         console.log(respuesta);
     }catch(e){
         console.log("Error al cargar productos." + e);
+    }
+}
+
+async function ver_producto(id) {
+    const formData = new FormData();
+    formData.append('id_producto', id);
+    try {
+        let respuesta = await fetch(base_url + '/controller/Producto.php?tipo=ver', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            document.querySelector('#codigo').value = json.contenido.codigo;
+            document.querySelector('#nombre').value = json.contenido.nombre;
+            document.querySelector('#detalle').value = json.contenido.detalle;
+            document.querySelector('#precio').value = json.contenido.precio;
+            document.querySelector('#idCategoria').value = json.contenido.id_categoria;
+            document.querySelector('#fechaVencimiento').value = json.contenido.fecha_vencimiento;
+            document.querySelector('#idProveedor').value = json.contenido.id_proveedor;
+        }else{
+            window.location = base_url + "/view-producto-admin";
+        }
+        console.log(json);
+    } catch (e) {
+        console.log('Ups, ocurrió un error ' + e);
     }
 }
