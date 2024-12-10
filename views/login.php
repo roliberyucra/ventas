@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link rel="icon" href="https://via.placeholder.com/32" type="image/x-icon"> <!-- Icono placeholder -->
+    <link rel="icon" href="https://liquipedia.net/commons/images/thumb/6/66/Team_Spirit_2022_lightmode.png/600px-Team_Spirit_2022_lightmode.png" type="image/x-icon"> <!-- Icono placeholder -->
     <title>Login</title>
     <style>
         body {
