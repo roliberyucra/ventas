@@ -26,8 +26,8 @@
 
                 $idProducto = $arr_Productos[$i]->id;
                 $producto = $arr_Productos[$i]->nombre;
-                                     //Redirigir al archivo editar-producto                    //Llamar a la funcion eliminar_producto()
-                $opciones = '<a href="'.BASE_URL.'/editar-producto/'.$idProducto.'"><i class="fas fa-edit"></i>Editar</a><button onclick="eliminar_producto('.$idProducto.');">Eliminar</button>';
+                                     //Redirigir al archivo editar-producto                                                  //Llamar a la funcion eliminar_producto()
+                $opciones = '<a href="'.BASE_URL.'/editar-producto/'.$idProducto.'"><i class="fas fa-edit"></i>Editar</a>    <button onclick="eliminar_producto('.$idProducto.');">Eliminar</button>';
                 $arr_Productos[$i]->options = $opciones;
             }
             $arr_Respuesta['status'] = true;
@@ -130,19 +130,19 @@
             $arr_Respuesta = array('status'=>false,'mensaje'=>'Error, campos vacíos');
         } else {
             // Aqui se guardará la respuesta del modelo
-            $arrProducto = $objProducto->actualizar_producto(
+            $arrProducto = $objProducto->actualizarProducto(
                 $id_producto, $nombre, $detalle, $precio, $idCategoria , $fechaVencimiento, $idProveedor);
                 
             if ($arrProducto->p_id > 0) {
                 $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
     
-                if ($_FILES['imagen']['tmp_name'] != "") {
+                if ($_FILES['imagen1']['tmp_name'] != "") {
                     unlink('../assets/img_productos/' . $img);
     
                     //cargar archivos
-                    $archivo = $_FILES['imagen']['tmp_name'];
+                    $archivo = $_FILES['imagen1']['tmp_name'];
                     $destino = '../assets/img_productos/';
-                    $tipo_archivo = strtolower(pathinfo($_FILES["imagen"]["name"], PATHINFO_EXTENSION));
+                    $tipo_archivo = strtolower(pathinfo($_FILES["imagen1"]["name"], PATHINFO_EXTENSION));
                     if (move_uploaded_file($archivo, $destino . '' . $id_producto.'.'.$tipo_archivo)) {
                     }
                 }
@@ -154,7 +154,15 @@
     }
 
     if ($tipo == 'eliminar') {
-        # code...
+        $id_producto = $_POST['id_producto'];
+        $arr_Respuesta = $objProducto->eliminarProducto($id_producto);
+        /* print_r($arr_Respuesta); */
+        if (empty($arr_Respuesta)) {
+            $response = array('status' => false);
+        }else {
+            $response = array('status' => true);
+        }
+        echo json_encode($response);
     }
 
 ?> 

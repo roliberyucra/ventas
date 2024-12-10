@@ -169,3 +169,40 @@ async function actualizar_producto() {
 
     }
 }
+
+async function eliminar_producto(id) {
+    swal({
+        title: "Estás seguro de que quieres eliminar este producto?",
+        text: "",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    }).then((willDelete)=>{
+        if (willDelete) {
+            fnt_eliminar(id);
+        }
+    })
+}
+
+
+async function fnt_eliminar(id) {
+    const formData = new FormData();
+    formData.append('id_producto', id);
+    try {
+        let respuesta = await fetch(base_url + '/controller/Producto.php?tipo=eliminar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            swal("Eliminar", "Eliminado correctamente", "success");
+            document.querySelector('#fila' + id).remove();
+        }else{
+            swal("Eliminar", "Error al eliminar", "warning");
+        }
+    } catch (e) {
+        console.log("Ups, ocurrió un error, " + e);
+    }
+}
