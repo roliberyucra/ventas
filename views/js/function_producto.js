@@ -153,3 +153,19 @@ async function ver_producto(id) {
         console.log('Ups, ocurrió un error ' + e);
     }
 }
+
+async function actualizar_producto() {
+    const datos = new FormData(formUpdateProducto);
+    try {
+        let respuesta = await fetch(base_url + '/controller/Producto.php?tipo=actualizar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos
+        });
+        json = await respuesta.json();
+        console.log(json);
+    } catch (e) {
+
+    }
+}

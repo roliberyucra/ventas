@@ -1,9 +1,11 @@
 <div id="form-control">
-    <form action="" id="formInsertProducto">
+    <form action="" id="formUpdateProducto">
         <center><h3><b>Formulario de edición de producto</b></h3></center>
+        <input type="hidden" name="id_producto" id="id_producto">
+        <input type="hidden" name="img" id="img">
     <div class="mb-3">
         <label for="codigo" class="form-label">Código: </label>
-        <input type="text" class="form-control" id="codigo" placeholder="Código de producto*" name="codigo">
+        <input type="text" class="form-control" id="codigo" placeholder="Código de producto*" name="codigo" disabled>
     </div>
 
     <div class="mb-3">
@@ -20,20 +22,12 @@
         <label for="precio" class="form-label">Precio: </label>
         <input type="number" class="form-control" id="precio" min="1" max="90000" step="0.10" placeholder="Precio*" name="precio">
     </div>
-
-    <!-- <div class="mb-3">
-        <label for="stock" class="form-label">Stock: </label>
-        <input type="number" class="form-control" id="stock" min="1" max="999999" placeholder="Stock*" name="stock">
-    </div> -->
     
     <div class="mb-3">
         <label for="idCategoria" class="form-label">Categoria: </label>
         <select class="form-control" name="idCategoria" id="idCategoria" required>
         <option disabled>Seleccione</option>
-        <!-- <option value="1">1</option> -->
-        <!-- <option value="2">2</option> -->
         </select>
-        <!-- <input type="number" class="form-control" id="" placeholder="ID categoria*" name=""> -->
     </div>
 
     <div class="mb-3">
