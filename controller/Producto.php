@@ -117,7 +117,8 @@
     }
 
     if ($tipo == "actualizar") {
-    
+        /* print_r($_POST); */
+
         $id_producto = $_POST['id_producto'];
         $img = $_POST['img'];
         $nombre = $_POST['nombre'];
