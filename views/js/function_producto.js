@@ -164,6 +164,11 @@ async function actualizar_producto() {
             body: datos
         });
         json = await respuesta.json();
+        if (json.status) {
+            swal("Registro", json.mensaje, "success")
+        } else {
+            swal("Registro", json.mensaje, "error")
+        }
         console.log(json);
     } catch (e) {
 

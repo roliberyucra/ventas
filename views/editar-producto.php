@@ -31,11 +31,6 @@
     </div>
 
     <div class="mb-3">
-        <label for="fechaVencimiento" class="form-label">Fecha vencimiento: </label>
-        <input type="date" class="form-control" id="fechaVencimiento" placeholder="Fecha de vencimiento*" name="fechaVencimiento">
-    </div>
-
-    <div class="mb-3">
         <label for="imagen1" class="form-label">Imagen de producto 1: </label>
         <input type="file" class="form-control" id="imagen1" name="imagen1">
     </div>
@@ -48,9 +43,7 @@
     </div>
     <center>
         <button type="button" onclick="actualizar_producto()" class="btn btn-danger">Actualizar</button>
-
-        <!-- <button type="submit" class="btn btn-danger">Registrar</button>
-        <button type="reset" class="btn btn-dark">Cancelar</button> -->
+        <a href="<?php echo BASE_URL; ?>/view-producto-admin" type="reset" class="btn btn-dark">Cancelar</a>
     </center>
     </form>
 </div>
