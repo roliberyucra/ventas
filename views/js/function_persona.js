@@ -139,7 +139,7 @@ async function ver_persona(id){
 async function actualizar_persona() {
     const datos = new FormData(formUpdatePersona);
     try {
-        let respuesta = await fetch(base_url + '/controller/Persona.php?tipo=actualizar', {
+        let respuesta = await fetch(base_url+'/controller/Persona.php?tipo=actualizar', {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
