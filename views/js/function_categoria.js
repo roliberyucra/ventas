@@ -9,9 +9,8 @@ async function insertar_categoria() {
 
 // Mostrar error en caso de codigo roto
     try {
-        // Capturar los datos del formulario y guardarlos en la constante "datos"
+        // 
         const datos = new FormData(formInsertCategoria);
-        // Enviar datos hacia el controlador
         // await = promesa
         let respuesta = await fetch(base_url + '/controller/Categoria.php?tipo=registrar',{
             method: 'POST',

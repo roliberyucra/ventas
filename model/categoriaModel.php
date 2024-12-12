@@ -27,7 +27,6 @@
         public function registrarCategoria($nombre, $detalle){
             // Orden de la base de datos
             $sql = $this->conexion->query("CALL registrar_categoria('{$nombre}', '{$detalle}')");
-            $sql = $sql->fetch_object();
             return $sql;
         }
         
