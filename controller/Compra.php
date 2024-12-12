@@ -99,4 +99,18 @@ if ($tipo == "actualizar") {
     echo json_encode($arr_Respuesta);
 }
 
+if ($tipo == "eliminar") {
+
+    $id_compra = $_POST['id_compra'];
+ 
+    $arr_Respuesta = $objCompra->eliminarCompra($id_compra);
+ 
+    if (empty($arr_Respuesta)) {
+        $response = array('status' => false);
+    } else {
+        $response = array('status' => true);
+    }
+    echo json_encode($response);
+ }
+
 ?>

@@ -17,7 +17,7 @@ class CompraModel{
 
     public function obtener_compras(){
         $arrRespuesta = array();
-        $respuesta = $this->conexion->query("SELECT * FROM compras");
+        $respuesta = $this->conexion->query("SELECT * FROM compras /* WHERE estado = 1 */");
         while ($objeto = $respuesta->fetch_object()) {
             array_push($arrRespuesta, $objeto);
         }
@@ -37,6 +37,10 @@ class CompraModel{
         return $sql;
     }
 
+    public function eliminarCompra($id_compra){
+        $sql = $this->conexion->query("CALL eliminar_compra('{$id_compra}')");
+        return $sql;
+    }
 }
 
 

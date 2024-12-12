@@ -62,6 +62,12 @@
             $sql = $sql->fetch_object();
             return $sql;
         }
+
+        public function eliminarPersona($id_persona){
+            $sql = $this->conexion->query("CALL eliminar_persona('{$id_persona}')");
+            /* $sql = $sql->fetch_object(); */
+            return $sql;
+        }
     }
 
     class proveedorModel{

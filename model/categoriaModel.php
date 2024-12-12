@@ -30,5 +30,23 @@
             $sql = $sql->fetch_object();
             return $sql;
         }
+        
+        public function verCategoria($id){
+            $sql = $this->conexion->query("SELECT * FROM categoria WHERE id = '{$id}'");
+            //convertimos la respuesta en un objeto
+            $sql = $sql->fetch_object();
+            return $sql;
+        }
+
+        public function actualizarCategoria($id_categoria, $nombre, $detalle){
+            $sql = $this->conexion->query("CALL actualizar_categoria('{$id_categoria}','{$nombre}','{$detalle}')");
+            $sql = $sql->fetch_object();
+            return $sql;
+        }
+
+        public function eliminarCategoria($id){
+            $sql = $this->conexion->query("CALL eliminar_categoria('{$id}')");
+            return $sql;
+        }
     }
 ?>
