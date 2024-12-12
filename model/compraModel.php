@@ -17,7 +17,7 @@ class CompraModel{
 
     public function obtener_compras(){
         $arrRespuesta = array();
-        $respuesta = $this->conexion->query("SELECT * FROM compras /* WHERE estado = 1 */");
+        $respuesta = $this->conexion->query("SELECT * FROM compras WHERE estado = 1");
         while ($objeto = $respuesta->fetch_object()) {
             array_push($arrRespuesta, $objeto);
         }

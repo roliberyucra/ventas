@@ -76,7 +76,6 @@ async function listar_categorias_admin() {
                     <th>${cont}</th>
                     <td>${item.nombre}</td>
                     <td>${item.detalle}</td>
-                    <td>${item.nro_identidad}</td>
                     <td>${item.options}</td>
                 `;
                 document.querySelector('#tbl_categoria').appendChild(nueva_fila);
