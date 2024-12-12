@@ -138,14 +138,15 @@ async function ver_producto(id) {
         });
         json = await respuesta.json();
         if (json.status) {
+            document.querySelector('#id_producto').value = json.contenido.id;
             document.querySelector('#codigo').value = json.contenido.codigo;
             document.querySelector('#nombre').value = json.contenido.nombre;
             document.querySelector('#detalle').value = json.contenido.detalle;
             document.querySelector('#precio').value = json.contenido.precio;
             document.querySelector('#idCategoria').value = json.contenido.id_categoria;
-            document.querySelector('#fechaVencimiento').value = json.contenido.fecha_vencimiento;
+            /* document.querySelector('#fechaVencimiento').value = json.contenido.fecha_vencimiento; */
             document.querySelector('#idProveedor').value = json.contenido.id_proveedor;
-            ocument.querySelector('#img').value = json.contenido.imagen_1;
+            document.querySelector('#img').value = json.contenido.imagen_1;
         }else{
             window.location = base_url + "/view-producto-admin";
         }

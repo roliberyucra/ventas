@@ -126,7 +126,7 @@
         $precio = $_POST['precio'];
         $idCategoria = $_POST['idCategoria'];
         $idProveedor = $_POST['idProveedor'];
-        if ($nombre == "" || $detalle == "" || $precio == "" || $idCategoria == "" || $idProveedor == "") {
+        if ($id_producto ==  "" || $nombre == "" || $detalle == "" || $precio == "" || $idCategoria == "" || $idProveedor == "") {
             //repuesta
             $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
         } else {
@@ -143,7 +143,8 @@
                     $archivo = $_FILES['imagen1']['tmp_name'];
                     $destino = '../assets/img_productos/';
                     $tipo_archivo = strtolower(pathinfo($_FILES["imagen1"]["name"], PATHINFO_EXTENSION));
-                    if (move_uploaded_file($archivo, $destino . '' . $id_producto . '.'. $tipo_archivo)) {
+                    if (move_uploaded_file($archivo, $destino . '' . $id_producto.'.'.$tipo_archivo)) {
+
                     }
                 }
             } else {
