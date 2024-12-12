@@ -154,6 +154,6 @@ async function actualizar_persona() {
         console.log(json);
     } catch (e) {
         console.log("Ups, ocurrió un error " + e);
-        swal("Error", "Hubo un problema al actualizar la persona. Intenta nuevamente.", "error");
+        swal("Error", "Hubo un problema al actualizar la persona. Intenta nuevamente.", "error" + e);
     }
 }
