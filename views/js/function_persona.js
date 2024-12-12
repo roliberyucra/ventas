@@ -153,6 +153,6 @@ async function actualizar_persona() {
         }
         console.log(json);
     } catch (e) {
-
+        console.log("Ups, ocurrió un error " + e);
     }
 }
