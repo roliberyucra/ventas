@@ -38,39 +38,80 @@ async function insertar_compra() {
 async function listar() {
     try {
         let respuesta = await fetch(base_url + '/controller/Compra.php?tipo=listar');
-        json = await respuesta.json();
+        let json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;
             let cont = 0;
             datos.forEach(item => {
                 let nueva_fila = document.createElement("tr");
-                // "nueva_fila.id" = id de la nueva fila, "item.id" = id de la base de datos(producto)
+                //id de la fila      id de la base de datos.
                 nueva_fila.id = "fila" + item.id;
-                // Sumar 1 al contador
-                /* cont+=1; */
                 cont++;
-                // los items.xx vienen De la Base de datos
+                //lo que va al lado del item. deben ser los campos de la base de datos
                 nueva_fila.innerHTML = `
-                    <th>${cont}</th>
-                    <td>${item.producto.nombre}</td>
-                    <td>${item.cantidad}</td>
-                    <td>${item.precio}</td>
-                    <td>${item.fecha_compra}</td>
-                    <td>${item.persona.razon_social}</td>
-                    <td>${item.codigo}</td>
-                    <td></td>
-                `;
-                document.querySelector('#tbl_compra').appendChild(nueva_fila);
+                        <th>${cont}</th>
+                        <td>${item.producto.nombre}</td>
+                        <td>${item.cantidad}</td>
+                        <td>${item.precio}</td>
+                        <td>${item.fecha_compra}</td>
+                        <td>${item.persona.razon_social}</td>
+                        <td>${item.options}</td>
+                `; document.querySelector('#tbl_compra').appendChild(nueva_fila)
             });
+        }
+
+    } catch (error) {
+        console.log("Error al cargar las compras" + error);
+    }
+}
+if (document.querySelector('#tbl_compra')) {
+    listar();
+}
+
+async function ver_compra(id) {
+    const formData = new FormData();
+    formData.append('id_compra', id);
+    try {
+        let respuesta = await fetch(base_url + '/controller/Compra.php?tipo=ver', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: formData
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            document.querySelector('#id_compra').value = json.contenido.id;
+            document.querySelector('#idProducto').value = json.contenido.id_producto;
+            document.querySelector('#cantidad').value = json.contenido.cantidad;
+            document.querySelector('#precio').value = json.contenido.precio;
+            document.querySelector('#fecha').value = json.contenido.fecha_compra;
+            document.querySelector('#idPersona').value = json.contenido.id_persona;
+        }else{
+            window.location = base_url + "/view-compra-admin";
         }
         console.log(json);
     } catch (e) {
-        console.log("Ups, ocurrió un error " + e);
+        console.log('Ups, ocurrió un error ' + e);
     }
 }
 
-// Verificar si hay una tabla o un contenedor con el id tbl_compra en la página.
-// Si existe, se ejecuta una función listar() responsable de mostrar o listar datos de compras
-if (document.querySelector('#tbl_compra')) {
-    listar();
+async function actualizar_compra() {
+    const datos = new FormData(formUpdateCompra);
+    try {
+        let respuesta = await fetch(base_url + '/controller/Compra.php?tipo=actualizar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos
+        });
+        json = await respuesta.json();
+        if (json.status) {
+            swal("Registro", json.mensaje, "success")
+        } else {
+            swal("Registro", json.mensaje, "error")
+        }
+        console.log(json);
+    } catch (e) {
+
+    }
 }

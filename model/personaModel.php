@@ -31,7 +31,7 @@
 
         // Por ID
         public function obtener_persona($id){
-            $respuesta = $this->conexion->query("SELECT * FROM persona WHERE id='{$id}'");
+            $respuesta = $this->conexion->query("SELECT * FROM  persona WHERE id = '{$id}'");
             $objeto = $respuesta->fetch_object();
             return $objeto;
         }
@@ -46,6 +46,19 @@
         //
         public function buscarPersonaPorDNI($password){
             $sql = $this->conexion->query("SELECT*FROM persona WHERE nro_identidad = '{$password}'");
+            $sql = $sql->fetch_object();
+            return $sql;
+        }
+
+        public function verPersona($id){
+            $sql = $this->conexion->query("SELECT * FROM persona WHERE id = '{$id}'");
+            //convertimos la respuesta en un objeto
+            $sql = $sql->fetch_object();
+            return $sql;
+        }
+    
+        public function actualizarPersona($id_persona, $razonSocial, $telefono, $departamento, $provincia, $distrito,$codPostal,$direccion,$rol,$correo){
+            $sql = $this->conexion->query("CALL actualizar_persona('{$id_persona}','{$razonSocial}','{$telefono}','{$departamento}','{$provincia}','{$distrito}','{$codPostal}','{$direccion}','{$rol}','{$correo}')");
             $sql = $sql->fetch_object();
             return $sql;
         }

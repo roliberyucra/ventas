@@ -145,6 +145,7 @@ async function ver_producto(id) {
             document.querySelector('#idCategoria').value = json.contenido.id_categoria;
             document.querySelector('#fechaVencimiento').value = json.contenido.fecha_vencimiento;
             document.querySelector('#idProveedor').value = json.contenido.id_proveedor;
+            ocument.querySelector('#img').value = json.contenido.imagen_1;
         }else{
             window.location = base_url + "/view-producto-admin";
         }

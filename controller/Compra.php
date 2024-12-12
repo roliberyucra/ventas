@@ -55,8 +55,8 @@ if ($tipo == 'listar') {
             $arr_Compras[$i]->persona=$r_persona;
 
             $idCompra = $arr_Compras[$i]->id;
-            /* $producto = $arr_Compras[$i]->nombre; */
-            $opciones = '';
+            /* $compra = $arr_Compras[$i]->nombre; */
+            $opciones = '<a href="'.BASE_URL.'/editar-compra/'.$idCompra.'"><i class="fas fa-edit"></i>Editar</a>    <button onclick="eliminar_compra('.$idCompra.');">Eliminar</button>';
             $arr_Compras[$i]->options = $opciones;
         }
         $arr_Respuesta['status'] = true;
@@ -66,5 +66,37 @@ if ($tipo == 'listar') {
     echo json_encode($arr_Respuesta);
 }
 
+if ($tipo == 'ver') {
+    $id_compra = $_POST['id_compra'];
+    $arr_Respuesta = $objCompra->verCompra($id_compra);
+    /* print_r($arr_Respuesta); */
+    if (empty($arr_Respuesta)) {
+        $response = array('status' => false, 'mensaje' => "Error, no hay informacion.");
+    }else {
+        $response = array('status' => true, 'mensaje' => "Datos encontrados", 'contenido' => $arr_Respuesta);
+    }
+    echo json_encode($response);
+}
+
+
+if ($tipo == "actualizar") {
+    $id_compra = $_POST['id_compra'];
+    $idProducto = $_POST['idProducto'];
+    $cantidad = $_POST['cantidad'];
+    $precio = $_POST['precio'];
+    $fecha = $_POST['fecha'];
+    $idPersona = $_POST['idPersona'];
+    if ($id_compra == "" || $idProducto == "" || $cantidad == "" || $precio == "" || $fecha == "" || $idPersona == "") {
+        $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacíos');
+    } else {
+        $arrCompras = $objCompra->actualizarCompra($id_compra, $idProducto, $cantidad, $precio, $fecha, $idPersona);
+        if ($arrCompras->p_id > 0) {
+            $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
+        } else {
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al actualizar compra');
+        }
+    }
+    echo json_encode($arr_Respuesta);
+}
 
 ?>
